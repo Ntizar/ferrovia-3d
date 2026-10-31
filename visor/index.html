@@ -267,7 +267,21 @@ redimensionar();
   renderer.render(escena, camara);
 })();
 
-window.__fv = { BD, idx, seleccionar, renderizados, total: BD.total, camara, controles };
+window.__fv = { BD, idx, seleccionar, renderizados, total: BD.total, camara, controles,
+  /* encuadre automático por bounding box real del objeto */
+  encuadrar(id, margen = 2.8){
+    const v = idx.get(id);
+    if (!v) return false;
+    const box = new THREE.Box3().setFromObject(v.group);
+    const c = new THREE.Vector3(), s = new THREE.Vector3();
+    box.getCenter(c); box.getSize(s);
+    const radio = Math.max(s.x, s.y, s.z) / 2 || 2;
+    const d = radio * margen + 3;
+    camara.position.set(c.x + d*0.72, c.y + d*0.55, c.z + d*0.95);
+    controles.target.copy(c);
+    controles.update();
+    return true;
+  } };
 window.__listo = true;
 </script>
 </body>
