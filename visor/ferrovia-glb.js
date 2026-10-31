@@ -6,6 +6,19 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 const loader = new GLTFLoader();
 const cache = new Map();   // slug -> Promise<GLTF scene clonable>
 const BASE = 'glb/kenney/';
+let texturaComun = null;
+
+/* textura del kit: colormap.png junto a los GLB */
+async function cargarTextura(){
+  if (texturaComun) return texturaComun;
+  texturaComun = new Promise((res) => {
+    new THREE.TextureLoader().load(BASE + 'colormap.png',
+      tex => { tex.colorSpace = THREE.SRGBColorSpace; res(tex); },
+      undefined,
+      () => res(null));
+  });
+  return texturaComun;
+}
 
 /* catálogo de GLB disponibles con su escala normativa (metros reales) */
 export const GLBS = {
@@ -40,16 +53,22 @@ export async function generarGLB(genId, params = {}){
   const cfg = GLBS[genId];
   if (!cfg) return null;
   try {
-    const escena = await cargar(cfg.slug);
+    const [escena, tex] = await Promise.all([cargar(cfg.slug), cargarTextura()]);
     const clon = escena.clone(true);
-    /* escala: el GLB original es de ~1 m; escalo al largo normativo */
     clon.scale.setScalar(cfg.largo);
-    clon.traverse(n => {
-      if (n.isMesh){
-        n.castShadow = true;
-        n.receiveShadow = true;
-      }
-    });
+    if (tex){
+      clon.traverse(n => {
+        if (n.isMesh){
+          n.castShadow = true;
+          n.receiveShadow = true;
+          /* aplicar la paleta del kit si el material no trae map */
+          if (!n.material.map){
+            n.material = n.material.clone();
+            n.material.map = tex;
+          }
+        }
+      });
+    }
     const g = new THREE.Group();
     g.add(clon);
     g.userData.fuenteGLB = cfg.fuente;
