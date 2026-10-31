@@ -49,26 +49,39 @@ function cargar(slug){
 }
 
 /* genera el grupo con el GLB escalado a dimensiones normativas */
+/* paleta ferroviaria real por familia de pieza (Kenney Holiday Kit: el colormap del
+   kit no encaja con los UVs del GLB descargado — usamos colores sólidos de catálogo) */
+const PALETA_GLB = {
+  'glb-locomotora': { cuerpo: '#c23b2e', detalle: '#2c3540' },   /* rojo Renfe */
+  'glb-vagon': { cuerpo: '#3d5a80', detalle: '#2c3540' },        /* azul Renfe mercancías */
+  'glb-tender': { cuerpo: '#2c3540', detalle: '#c23b2e' },
+  'glb-via-recta': { cuerpo: '#6f6a60', detalle: '#9aa3ad' },
+  'glb-via-detalle': { cuerpo: '#6f6a60', detalle: '#9aa3ad' },
+  'glb-via-curva': { cuerpo: '#6f6a60', detalle: '#9aa3ad' },
+};
+
 export async function generarGLB(genId, params = {}){
   const cfg = GLBS[genId];
   if (!cfg) return null;
   try {
-    const [escena, tex] = await Promise.all([cargar(cfg.slug), cargarTextura()]);
+    const escena = await cargar(cfg.slug);
     const clon = escena.clone(true);
     clon.scale.setScalar(cfg.largo);
-    if (tex){
-      clon.traverse(n => {
-        if (n.isMesh){
-          n.castShadow = true;
-          n.receiveShadow = true;
-          n.material = n.material.clone();
-          n.material.map = tex;
-          n.material.color.set('#ffffff');
-          n.material.emissive = new THREE.Color('#2a2a2a'); /* nunca negro puro sobre fondo negro */
-          n.material.roughness = 0.75;
-        }
-      });
-    }
+    const paleta = PALETA_GLB[genId] || { cuerpo: '#8a8f98', detalle: '#5a6068' };
+    let primerMesh = true;
+    clon.traverse(n => {
+      if (n.isMesh){
+        n.castShadow = true;
+        n.receiveShadow = true;
+        n.material = n.material.clone();
+        n.material.map = null;
+        /* el mesh principal lleva el color de cuerpo; los secundarios el de detalle */
+        n.material.color.set(primerMesh ? paleta.cuerpo : paleta.detalle);
+        n.material.roughness = 0.65;
+        n.material.metalness = genId.startsWith('glb-via') ? 0.5 : 0.25;
+        primerMesh = false;
+      }
+    });
     const g = new THREE.Group();
     g.add(clon);
     g.userData.fuenteGLB = cfg.fuente;
