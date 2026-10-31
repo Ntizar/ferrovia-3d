@@ -94,6 +94,7 @@ window.addEventListener('error', e => window.__errores.push(String(e.message || 
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
 import { generarObjeto, MATS } from './ferrovia-gen.js';
+import { generarGLB, GLBS } from './ferrovia-glb.js';
 
 const BD = await (await fetch('datos/objetos.json')).json();
 document.getElementById('fv-total').textContent = BD.total;
@@ -132,36 +133,41 @@ escena.add(rejilla);
 /* ---------- render de objetos en cuadrícula ---------- */
 /* escala visual: cada objeto se normaliza para que quepa en una celda de ~8 m
    (el tamaño real está en la ficha; aquí manda la comparabilidad) */
+/* GLB reales (Kenney CC0): los objetos con gen en GLBS usan el modelo descargado */
 const COLS = 14, SEP = 9;
 const idx = new Map();   // id -> { group, x, z }
 let renderizados = 0;
 const _bbox = new THREE.Box3(), _size = new THREE.Vector3();
-BD.objetos.forEach((o, i) => {
-  const g = generarObjeto(o);
-  if (!g) return;
-  _bbox.setFromObject(g);
-  _bbox.getSize(_size);
-  const maxDim = Math.max(_size.x, _size.y, _size.z) || 1;
-  const escala = Math.min(8 / maxDim, 4);   // nunca >4x (los chicos crecen, los grandes se encogen)
-  g.scale.setScalar(Math.max(escala, 0.25));
-  const col = i % COLS, fila = Math.floor(i / COLS);
-  const x = (col - COLS/2 + 0.5) * SEP;
-  const z = fila * SEP;
-  g.position.set(x, 0, z);
-  g.traverse(n => { if (n.isMesh || n.isLine){ n.userData.objId = o.id; } });
-  g.userData.id = o.id;
-  escena.add(g);
-  idx.set(o.id, { group: g, x, z, obj: o });
-  renderizados++;
-});
-document.getElementById('kpi-render').textContent = renderizados.toLocaleString('es-ES');
-
-/* centrar cámara sobre la cuadrícula */
-const filas = Math.ceil(BD.objetos.length / COLS);
-controles.target.set(0, 1.5, filas * SEP / 2);
-camara.position.set(40, 55, filas * SEP / 2 + 35);
-camara.far = 800; camara.updateProjectionMatrix();
-escena.fog = new THREE.Fog(C_BG, 150, 600);
+async function montar(){
+  for (let i = 0; i < BD.objetos.length; i++){
+    const o = BD.objetos[i];
+    let g = GLBS[o.gen] ? await generarGLB(o.gen, o.params) : null;
+    if (!g) g = generarObjeto(o);
+    if (!g) continue;
+    _bbox.setFromObject(g);
+    _bbox.getSize(_size);
+    const maxDim = Math.max(_size.x, _size.y, _size.z) || 1;
+    const escala = Math.min(8 / maxDim, 4);
+    g.scale.setScalar(Math.max(escala, 0.25));
+    const col = i % COLS, fila = Math.floor(i / COLS);
+    const x = (col - COLS/2 + 0.5) * SEP;
+    const z = fila * SEP;
+    g.position.set(x, 0, z);
+    g.traverse(n => { if (n.isMesh || n.isLine){ n.userData.objId = o.id; } });
+    g.userData.id = o.id;
+    escena.add(g);
+    idx.set(o.id, { group: g, x, z, obj: o });
+    renderizados++;
+  }
+  document.getElementById('kpi-render').textContent = renderizados.toLocaleString('es-ES');
+  const filas = Math.ceil(BD.objetos.length / COLS);
+  controles.target.set(0, 1.5, filas * SEP / 2);
+  camara.position.set(40, 55, filas * SEP / 2 + 35);
+  camara.far = 800; camara.updateProjectionMatrix();
+  escena.fog = new THREE.Fog(C_BG, 150, 600);
+  window.__listo = true;
+}
+montar();
 
 /* ---------- UI: chips por familia ---------- */
 const contChips = document.getElementById('chips');

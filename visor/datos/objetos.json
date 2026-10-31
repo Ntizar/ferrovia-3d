@@ -1,6 +1,6 @@
 {
  "version": "1.0",
- "total": 594,
+ "total": 600,
  "fuente": "dimensiones de normativa UIC/ADIF/Renfe; generadores paramétricos three.js",
  "familias": [
   "catenaria",
@@ -6921,6 +6921,72 @@
    "dims": "contención",
    "params": {
     "tipo": "Pantalla de pilotes secantes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0595",
+   "nombre": "Locomotora GLB (Kenney CC0)",
+   "familia": "material_rodante",
+   "gen": "glb-locomotora",
+   "dims": "19 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0596",
+   "nombre": "Vagón GLB (Kenney CC0)",
+   "familia": "material_rodante",
+   "gen": "glb-vagon",
+   "dims": "12 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0597",
+   "nombre": "Ténder GLB (Kenney CC0)",
+   "familia": "material_rodante",
+   "gen": "glb-tender",
+   "dims": "8 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0598",
+   "nombre": "Vía recta GLB (Kenney CC0)",
+   "familia": "via",
+   "gen": "glb-via-recta",
+   "dims": "25 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0599",
+   "nombre": "Vía recta detallada GLB",
+   "familia": "via",
+   "gen": "glb-via-detalle",
+   "dims": "25 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0600",
+   "nombre": "Vía curva GLB (Kenney CC0)",
+   "familia": "via",
+   "gen": "glb-via-curva",
+   "dims": "25 m · modelo real",
+   "params": {
+    "fuente": "Kenney Holiday Kit"
    },
    "nota": ""
   }
