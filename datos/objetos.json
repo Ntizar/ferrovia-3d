@@ -1,0 +1,6928 @@
+{
+ "version": "1.0",
+ "total": 594,
+ "fuente": "dimensiones de normativa UIC/ADIF/Renfe; generadores paramétricos three.js",
+ "familias": [
+  "catenaria",
+  "estacion",
+  "galibo",
+  "geotecnia",
+  "hidraulica",
+  "infra",
+  "material_rodante",
+  "obra_civil",
+  "obra_fabrica",
+  "senial",
+  "telecom",
+  "via"
+ ],
+ "objetos": [
+  {
+   "id": "VIA-0001",
+   "nombre": "Carril UIC54 — tramo recto",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC54 · 54.4 kg/m",
+   "params": {
+    "perfil": "UIC54",
+    "anchoCabeza": 0.067,
+    "pata": 0.016,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0002",
+   "nombre": "Carril UIC54 — tramo curva R300",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC54 · 54.4 kg/m",
+   "params": {
+    "perfil": "UIC54",
+    "anchoCabeza": 0.067,
+    "pata": 0.016,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0003",
+   "nombre": "Carril UIC54 — tramo curva R500",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC54 · 54.4 kg/m",
+   "params": {
+    "perfil": "UIC54",
+    "anchoCabeza": 0.067,
+    "pata": 0.016,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0004",
+   "nombre": "Carril UIC54 — aparato vía",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC54 · 54.4 kg/m",
+   "params": {
+    "perfil": "UIC54",
+    "anchoCabeza": 0.067,
+    "pata": 0.016,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0005",
+   "nombre": "Carril UIC54 — sabata de apoyo",
+   "familia": "via",
+   "gen": "sabata",
+   "dims": "UIC54 · apoyo contínuo",
+   "params": {
+    "perfil": "UIC54"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0006",
+   "nombre": "Carril UIC60 — tramo recto",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60",
+    "anchoCabeza": 0.072,
+    "pata": 0.0165,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0007",
+   "nombre": "Carril UIC60 — tramo curva R300",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60",
+    "anchoCabeza": 0.072,
+    "pata": 0.0165,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0008",
+   "nombre": "Carril UIC60 — tramo curva R500",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60",
+    "anchoCabeza": 0.072,
+    "pata": 0.0165,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0009",
+   "nombre": "Carril UIC60 — aparato vía",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60",
+    "anchoCabeza": 0.072,
+    "pata": 0.0165,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0010",
+   "nombre": "Carril UIC60 — sabata de apoyo",
+   "familia": "via",
+   "gen": "sabata",
+   "dims": "UIC60 · apoyo contínuo",
+   "params": {
+    "perfil": "UIC60"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0011",
+   "nombre": "Carril UIC60E5 — tramo recto",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60E5 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60E5",
+    "anchoCabeza": 0.072,
+    "pata": 0.0145,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0012",
+   "nombre": "Carril UIC60E5 — tramo curva R300",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60E5 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60E5",
+    "anchoCabeza": 0.072,
+    "pata": 0.0145,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0013",
+   "nombre": "Carril UIC60E5 — tramo curva R500",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60E5 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60E5",
+    "anchoCabeza": 0.072,
+    "pata": 0.0145,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0014",
+   "nombre": "Carril UIC60E5 — aparato vía",
+   "familia": "via",
+   "gen": "carril",
+   "dims": "UIC60E5 · 60.3 kg/m",
+   "params": {
+    "perfil": "UIC60E5",
+    "anchoCabeza": 0.072,
+    "pata": 0.0145,
+    "altura": 0.049
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0015",
+   "nombre": "Carril UIC60E5 — sabata de apoyo",
+   "familia": "via",
+   "gen": "sabata",
+   "dims": "UIC60E5 · apoyo contínuo",
+   "params": {
+    "perfil": "UIC60E5"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0016",
+   "nombre": "Traviesa Monobloque PS-93",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.6×0.3×0.21 m",
+   "params": {
+    "lx": 2.6,
+    "lz": 0.3,
+    "ly": 0.21,
+    "material": "prefabricado HA-45"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0017",
+   "nombre": "Traviesa Monobloque SZ-41 (Rheda)",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.6×0.3×0.2 m",
+   "params": {
+    "lx": 2.6,
+    "lz": 0.3,
+    "ly": 0.2,
+    "material": "bicapa con revestimiento"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0018",
+   "nombre": "Traviesa Traviesa de madera FS",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.6×0.26×0.16 m",
+   "params": {
+    "lx": 2.6,
+    "lz": 0.26,
+    "ly": 0.16,
+    "material": "roble creosotado (línea convencional)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0019",
+   "nombre": "Traviesa Traviesa bi-bloque VD",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.42×0.28×0.19 m",
+   "params": {
+    "lx": 2.42,
+    "lz": 0.28,
+    "ly": 0.19,
+    "material": "bi-bloque con tirante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0020",
+   "nombre": "Traviesa Traviesa puente (aplaca)",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.8×0.3×0.24 m",
+   "params": {
+    "lx": 2.8,
+    "lz": 0.3,
+    "ly": 0.24,
+    "material": "para placa de puente"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0021",
+   "nombre": "Traviesa Traviesa corta de aparato",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "2.2×0.26×0.18 m",
+   "params": {
+    "lx": 2.2,
+    "lz": 0.26,
+    "ly": 0.18,
+    "material": "progresiva en desvío"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0022",
+   "nombre": "Traviesa Traviesa de cambio larga",
+   "familia": "via",
+   "gen": "traviesa",
+   "dims": "4.5×0.3×0.21 m",
+   "params": {
+    "lx": 4.5,
+    "lz": 0.3,
+    "ly": 0.21,
+    "material": "en aparatos de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0023",
+   "nombre": "Tendido a 0.6 m de separación",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "0.6 m entre ejes",
+   "params": {
+    "sep": 0.6
+   },
+   "nota": "separación en función de velocidad y radio"
+  },
+  {
+   "id": "VIA-0024",
+   "nombre": "Tendido a 0.625 m de separación",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "0.625 m entre ejes",
+   "params": {
+    "sep": 0.625
+   },
+   "nota": "separación en función de velocidad y radio"
+  },
+  {
+   "id": "VIA-0025",
+   "nombre": "Tendido a 0.65 m de separación",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "0.65 m entre ejes",
+   "params": {
+    "sep": 0.65
+   },
+   "nota": "separación en función de velocidad y radio"
+  },
+  {
+   "id": "VIA-0026",
+   "nombre": "Tendido a 0.68 m de separación",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "0.68 m entre ejes",
+   "params": {
+    "sep": 0.68
+   },
+   "nota": "separación en función de velocidad y radio"
+  },
+  {
+   "id": "VIA-0027",
+   "nombre": "Sujeción Vossloh SKL-14",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "clip helicoidal e-colgado",
+    "uso": "AV"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0028",
+   "nombre": "Sujeción Vossloh SKL-12",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "clip helicoidal",
+    "uso": "convencional"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0029",
+   "nombre": "Sujeción Vossloh SKL-15",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "clip con versión alta",
+    "uso": "AV plataformado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0030",
+   "nombre": "Sujeción Pandrol Fastclip",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "clip auto-encajable",
+    "uso": "convencional"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0031",
+   "nombre": "Sujeción Pandrol e-Clip",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "clip e-Clip",
+    "uso": "AV"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0032",
+   "nombre": "Sujeción Sujeción W-14 con placa elástica",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "placa + tirafondo",
+    "uso": "puente"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0033",
+   "nombre": "Sujeción Sujeción de aplaca PF",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "aplaca + clavija",
+    "uso": "convencional"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0034",
+   "nombre": "Sujeción Sujeción antivibratoria Colex",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "aislante intercalar",
+    "uso": "zona urbana"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0035",
+   "nombre": "Sujeción Sujeción con regulador de nivel (H-20)",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "aplaca cunera",
+    "uso": "ajuste"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0036",
+   "nombre": "Sujeción Sujeción con regulador lateral (H-30)",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "clip + placa",
+   "params": {
+    "tipo": "tope lateral",
+    "uso": "ajuste"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0037",
+   "nombre": "Capa: formación (subexplanada) — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "formación (subexplanada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0038",
+   "nombre": "Capa: formación (subexplanada) — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "formación (subexplanada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0039",
+   "nombre": "Capa: formación (subexplanada) — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "formación (subexplanada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0040",
+   "nombre": "Capa: formación (subexplanada) — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "formación (subexplanada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0041",
+   "nombre": "Capa: subbalasto GCA — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "subbalasto GCA"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0042",
+   "nombre": "Capa: subbalasto GCA — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "subbalasto GCA"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0043",
+   "nombre": "Capa: subbalasto GCA — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "subbalasto GCA"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0044",
+   "nombre": "Capa: subbalasto GCA — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "subbalasto GCA"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0045",
+   "nombre": "Capa: balasto 25/50 — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "balasto 25/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0046",
+   "nombre": "Capa: balasto 25/50 — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "balasto 25/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0047",
+   "nombre": "Capa: balasto 25/50 — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "balasto 25/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0048",
+   "nombre": "Capa: balasto 25/50 — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "balasto 25/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0049",
+   "nombre": "Capa: balasto 31,5/50 — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "balasto 31,5/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0050",
+   "nombre": "Capa: balasto 31,5/50 — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "balasto 31,5/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0051",
+   "nombre": "Capa: balasto 31,5/50 — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "balasto 31,5/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0052",
+   "nombre": "Capa: balasto 31,5/50 — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "balasto 31,5/50"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0053",
+   "nombre": "Capa: subbalasto tratado in situ — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "subbalasto tratado in situ"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0054",
+   "nombre": "Capa: subbalasto tratado in situ — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "subbalasto tratado in situ"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0055",
+   "nombre": "Capa: subbalasto tratado in situ — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "subbalasto tratado in situ"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0056",
+   "nombre": "Capa: subbalasto tratado in situ — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "subbalasto tratado in situ"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0057",
+   "nombre": "Capa: capa drenante — 20 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "20 cm",
+   "params": {
+    "espesor": 0.2,
+    "capa": "capa drenante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0058",
+   "nombre": "Capa: capa drenante — 25 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "25 cm",
+   "params": {
+    "espesor": 0.25,
+    "capa": "capa drenante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0059",
+   "nombre": "Capa: capa drenante — 30 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "30 cm",
+   "params": {
+    "espesor": 0.3,
+    "capa": "capa drenante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0060",
+   "nombre": "Capa: capa drenante — 35 cm",
+   "familia": "infra",
+   "gen": "capa",
+   "dims": "35 cm",
+   "params": {
+    "espesor": 0.35,
+    "capa": "capa drenante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0061",
+   "nombre": "Perfil: terraplén 3H/2V",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "terraplén 3H/2V"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0062",
+   "nombre": "Perfil: terraplén 1,5H/1V",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "terraplén 1,5H/1V"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0063",
+   "nombre": "Perfil: desmonte 1H/1V",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "desmonte 1H/1V"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0064",
+   "nombre": "Perfil: desmonte 3/2 con berma",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "desmonte 3/2 con berma"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0065",
+   "nombre": "Perfil: terraplén en trinchera",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "terraplén en trinchera"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0066",
+   "nombre": "Perfil: desmonte rocoso vertical",
+   "familia": "infra",
+   "gen": "perfil",
+   "dims": "sección transversal tipo",
+   "params": {
+    "forma": "desmonte rocoso vertical"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0067",
+   "nombre": "Berma de 2 m",
+   "familia": "infra",
+   "gen": "berma",
+   "dims": "2 m",
+   "params": {
+    "ancho": 2
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0068",
+   "nombre": "Berma de 3 m",
+   "familia": "infra",
+   "gen": "berma",
+   "dims": "3 m",
+   "params": {
+    "ancho": 3
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0069",
+   "nombre": "Berma de 5 m",
+   "familia": "infra",
+   "gen": "berma",
+   "dims": "5 m",
+   "params": {
+    "ancho": 5
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0070",
+   "nombre": "Cuneta triangular",
+   "familia": "infra",
+   "gen": "cuneta",
+   "dims": "sección hidráulica",
+   "params": {
+    "tipo": "triangular"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0071",
+   "nombre": "Cuneta trapecial",
+   "familia": "infra",
+   "gen": "cuneta",
+   "dims": "sección hidráulica",
+   "params": {
+    "tipo": "trapecial"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0072",
+   "nombre": "Cuneta de hormigón en V",
+   "familia": "infra",
+   "gen": "cuneta",
+   "dims": "sección hidráulica",
+   "params": {
+    "tipo": "de hormigón en V"
+   },
+   "nota": ""
+  },
+  {
+   "id": "INF-0073",
+   "nombre": "Cuneta de piña",
+   "familia": "infra",
+   "gen": "cuneta",
+   "dims": "sección hidráulica",
+   "params": {
+    "tipo": "de piña"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0074",
+   "nombre": "Bajante circular Ø0.4 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.4 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.4
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0075",
+   "nombre": "Bajante circular Ø0.6 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.6 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0076",
+   "nombre": "Bajante circular Ø0.8 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.8 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.8
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0077",
+   "nombre": "Bajante circular Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0078",
+   "nombre": "Bajante circular Ø1.2 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.2 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0079",
+   "nombre": "Bajante circular Ø1.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.5 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0080",
+   "nombre": "Bajante circular Ø2.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.0 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 2.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0081",
+   "nombre": "Bóveda de paso superior Ø3.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 3.0 m",
+   "params": {
+    "tipo": "Bóveda de paso superior",
+    "diametro": 3.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0082",
+   "nombre": "Bóveda de paso inferior Ø4.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 4.0 m",
+   "params": {
+    "tipo": "Bóveda de paso inferior",
+    "diametro": 4.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0083",
+   "nombre": "Canal revestido trapecial Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Canal revestido trapecial",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0084",
+   "nombre": "Canal revestido trapecial Ø2.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.0 m",
+   "params": {
+    "tipo": "Canal revestido trapecial",
+    "diametro": 2.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0085",
+   "nombre": "Cuneta de profundidad entubada Ø0.6 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.6 m",
+   "params": {
+    "tipo": "Cuneta de profundidad entubada",
+    "diametro": 0.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0086",
+   "nombre": "Arqueta de registro DIF Ø1.2 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.2 m",
+   "params": {
+    "tipo": "Arqueta de registro DIF",
+    "diametro": 1.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0087",
+   "nombre": "Arqueta de registro DIN Ø1.2 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.2 m",
+   "params": {
+    "tipo": "Arqueta de registro DIN",
+    "diametro": 1.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0088",
+   "nombre": "Desagüe transversal (balsa) Ø0.8 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.8 m",
+   "params": {
+    "tipo": "Desagüe transversal (balsa)",
+    "diametro": 0.8
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0089",
+   "nombre": "Tubo frontal de desagüe Ø0.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.5 m",
+   "params": {
+    "tipo": "Tubo frontal de desagüe",
+    "diametro": 0.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0090",
+   "nombre": "Hidroductor bajo vía Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Hidroductor bajo vía",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0091",
+   "nombre": "Hidroductor bajo vía Ø1.4 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.4 m",
+   "params": {
+    "tipo": "Hidroductor bajo vía",
+    "diametro": 1.4
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0092",
+   "nombre": "Zanja de drenaje longitudinal profunda Ø2.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.5 m",
+   "params": {
+    "tipo": "Zanja de drenaje longitudinal profunda",
+    "diametro": 2.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0093",
+   "nombre": "Dique de encauzamiento Ø3.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 3.0 m",
+   "params": {
+    "tipo": "Dique de encauzamiento",
+    "diametro": 3.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0094",
+   "nombre": "Escollera de protección de talud Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Escollera de protección de talud",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0095",
+   "nombre": "Pozo de absorción Ø2.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.0 m",
+   "params": {
+    "tipo": "Pozo de absorción",
+    "diametro": 2.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0096",
+   "nombre": "Canal de coronación Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Canal de coronación",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0097",
+   "nombre": "Bajante de talud en escalones Ø0.3 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.3 m",
+   "params": {
+    "tipo": "Bajante de talud en escalones",
+    "diametro": 0.3
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0098",
+   "nombre": "Disipador de energía (cuenco) Ø2.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.5 m",
+   "params": {
+    "tipo": "Disipador de energía (cuenco)",
+    "diametro": 2.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0099",
+   "nombre": "Aliviadero lateral de cuneta Ø1.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.0 m",
+   "params": {
+    "tipo": "Aliviadero lateral de cuneta",
+    "diametro": 1.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0100",
+   "nombre": "Dren longitudinal con geotextil",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Dren longitudinal con geotextil"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0101",
+   "nombre": "Dren transversal con filtro",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Dren transversal con filtro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0102",
+   "nombre": "Zanja drenante con tubería ranurada",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Zanja drenante con tubería ranurada"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0103",
+   "nombre": "Dren tapizado (geocompuesto)",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Dren tapizado (geocompuesto)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0104",
+   "nombre": "Capa anticapilar",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Capa anticapilar"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0105",
+   "nombre": "Formación granular drenante",
+   "familia": "hidraulica",
+   "gen": "dren",
+   "dims": "dren longitudinal/transversal",
+   "params": {
+    "tipo": "Formación granular drenante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0106",
+   "nombre": "Puente viga artesa pretensada tipo \"losa\" (vano ≤ 20 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0107",
+   "nombre": "Puente viga artesa pretensada (vano 25 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0108",
+   "nombre": "Puente viga artesa pretensada (vano 35 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0109",
+   "nombre": "Puente losa maciza de hormigón (vano ≤ 12 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 12 m",
+   "params": {
+    "vano": 12,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0110",
+   "nombre": "Puente losa aligerada (vano 15 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa-aligerada",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "losa-aligerada"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0111",
+   "nombre": "Puente viga de alma llena (vano 20 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0112",
+   "nombre": "Puente tablero esbelto pretensado (vano 45 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-tablero-esbelto",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "tablero-esbelto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0113",
+   "nombre": "Viaducto viga cajón (vano 50 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0114",
+   "nombre": "Viaducto viga cajón (vano 60 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0115",
+   "nombre": "Viaducto pila alta H>40 m (vano 50 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon-alto",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "tipologia": "cajon-alto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0116",
+   "nombre": "Puente arco de hormigón (vano 60 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-arco",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "tipologia": "arco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0117",
+   "nombre": "Puente celosía metálica (vano 40 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0118",
+   "nombre": "Pasarela peatonal de viga artesa (vano 20 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-pasarela",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "pasarela"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0119",
+   "nombre": "Pasarela metálica en U (vano 25 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-pasarela-U",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "pasarela-U"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0120",
+   "nombre": "Paso superior losa (vano 15 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-ps-losa",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "ps-losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0121",
+   "nombre": "Paso superior viga artesa (vano 25 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-ps-viga",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "ps-viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0122",
+   "nombre": "Paso inferior bóveda (vano 8 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 8 m",
+   "params": {
+    "vano": 8,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0123",
+   "nombre": "Paso inferior marco (vano 10 m)",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0124",
+   "nombre": "Pila tipo en H — h=4 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 4 m",
+   "params": {
+    "altura": 4,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0125",
+   "nombre": "Pila tipo fusto hueco — h=4 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 4 m",
+   "params": {
+    "altura": 4,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0126",
+   "nombre": "Pila tipo en H — h=6 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 6 m",
+   "params": {
+    "altura": 6,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0127",
+   "nombre": "Pila tipo fusto hueco — h=6 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 6 m",
+   "params": {
+    "altura": 6,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0128",
+   "nombre": "Pila tipo en H — h=8 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 8 m",
+   "params": {
+    "altura": 8,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0129",
+   "nombre": "Pila tipo fusto hueco — h=8 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 8 m",
+   "params": {
+    "altura": 8,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0130",
+   "nombre": "Pila tipo en H — h=10 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 10 m",
+   "params": {
+    "altura": 10,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0131",
+   "nombre": "Pila tipo fusto hueco — h=10 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 10 m",
+   "params": {
+    "altura": 10,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0132",
+   "nombre": "Pila tipo en H — h=12 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 12 m",
+   "params": {
+    "altura": 12,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0133",
+   "nombre": "Pila tipo fusto hueco — h=12 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 12 m",
+   "params": {
+    "altura": 12,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0134",
+   "nombre": "Pila tipo en H — h=15 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 15 m",
+   "params": {
+    "altura": 15,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0135",
+   "nombre": "Pila tipo fusto hueco — h=15 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 15 m",
+   "params": {
+    "altura": 15,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0136",
+   "nombre": "Pila tipo en H — h=20 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 20 m",
+   "params": {
+    "altura": 20,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0137",
+   "nombre": "Pila tipo fusto hueco — h=20 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 20 m",
+   "params": {
+    "altura": 20,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0138",
+   "nombre": "Pila tipo en H — h=25 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 25 m",
+   "params": {
+    "altura": 25,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0139",
+   "nombre": "Pila tipo fusto hueco — h=25 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 25 m",
+   "params": {
+    "altura": 25,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0140",
+   "nombre": "Pila tipo en H — h=30 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 30 m",
+   "params": {
+    "altura": 30,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0141",
+   "nombre": "Pila tipo fusto hueco — h=30 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 30 m",
+   "params": {
+    "altura": 30,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0142",
+   "nombre": "Pila tipo en H — h=40 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 40 m",
+   "params": {
+    "altura": 40,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0143",
+   "nombre": "Pila tipo fusto hueco — h=40 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 40 m",
+   "params": {
+    "altura": 40,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0144",
+   "nombre": "Estribo tipo en U — 8 m",
+   "familia": "obra_fabrica",
+   "gen": "estribo",
+   "dims": "8 m de alero",
+   "params": {
+    "lon": 8
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0145",
+   "nombre": "Estribo tipo en U — 10 m",
+   "familia": "obra_fabrica",
+   "gen": "estribo",
+   "dims": "10 m de alero",
+   "params": {
+    "lon": 10
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0146",
+   "nombre": "Estribo tipo en U — 12 m",
+   "familia": "obra_fabrica",
+   "gen": "estribo",
+   "dims": "12 m de alero",
+   "params": {
+    "lon": 12
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0147",
+   "nombre": "Muro de contención en L",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de contención en L"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0148",
+   "nombre": "Muro pantalla",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro pantalla"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0149",
+   "nombre": "Muro de gaviones",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de gaviones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0150",
+   "nombre": "Muro de gabiones con frente escalonado",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de gabiones con frente escalonado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0151",
+   "nombre": "Muro MG-III (tierra armada)",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro MG-III (tierra armada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0152",
+   "nombre": "pórtico con postes IPN — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0153",
+   "nombre": "pórtico con postes IPN — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0154",
+   "nombre": "pórtico con postes IPN — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0155",
+   "nombre": "pórtico con postes IPN — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0156",
+   "nombre": "pórtico con tubo redondo — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico con tubo redondo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0157",
+   "nombre": "pórtico con tubo redondo — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico con tubo redondo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0158",
+   "nombre": "pórtico con tubo redondo — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico con tubo redondo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0159",
+   "nombre": "pórtico con tubo redondo — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico con tubo redondo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0160",
+   "nombre": "pórtico con poste UIC — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico con poste UIC"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0161",
+   "nombre": "pórtico con poste UIC — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico con poste UIC"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0162",
+   "nombre": "pórtico con poste UIC — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico con poste UIC"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0163",
+   "nombre": "pórtico con poste UIC — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico con poste UIC"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0164",
+   "nombre": "ménsula simple — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0165",
+   "nombre": "ménsula simple — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0166",
+   "nombre": "ménsula simple — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0167",
+   "nombre": "ménsula simple — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0168",
+   "nombre": "ménsula con registro — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0169",
+   "nombre": "ménsula con registro — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0170",
+   "nombre": "ménsula con registro — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0171",
+   "nombre": "ménsula con registro — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0172",
+   "nombre": "pórtico en celosía — 45 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0173",
+   "nombre": "pórtico en celosía — 50 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0174",
+   "nombre": "pórtico en celosía — 55 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0175",
+   "nombre": "pórtico en celosía — 60 m de vano",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0176",
+   "nombre": "Poste de catenaria h=5.6 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 5.6 m",
+   "params": {
+    "altura": 5.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0177",
+   "nombre": "Poste de catenaria h=6.0 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 6.0 m",
+   "params": {
+    "altura": 6.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0178",
+   "nombre": "Poste de catenaria h=6.5 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 6.5 m",
+   "params": {
+    "altura": 6.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0179",
+   "nombre": "Poste de catenaria h=7.0 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 7.0 m",
+   "params": {
+    "altura": 7.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0180",
+   "nombre": "Catenaria simple (hilo contacto + mensajero)",
+   "familia": "catenaria",
+   "gen": "vaina",
+   "dims": "vano entre postes",
+   "params": {
+    "flecha": 0.7
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0181",
+   "nombre": "Catenaria con hilo auxiliar (compuesta)",
+   "familia": "catenaria",
+   "gen": "vaina",
+   "dims": "vano entre postes",
+   "params": {
+    "flecha": 0.5,
+    "auxiliar": true
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0182",
+   "nombre": "Catenaria con registrar regulable",
+   "familia": "catenaria",
+   "gen": "vaina",
+   "dims": "vano entre postes",
+   "params": {
+    "flecha": 0.7,
+    "regulador": true
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0183",
+   "nombre": "péndola simple",
+   "familia": "catenaria",
+   "gen": "pendola",
+   "dims": "elemento",
+   "params": {
+    "tipo": "péndola simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0184",
+   "nombre": "péndola doble",
+   "familia": "catenaria",
+   "gen": "pendola",
+   "dims": "elemento",
+   "params": {
+    "tipo": "péndola doble"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0185",
+   "nombre": "péndola con recorte",
+   "familia": "catenaria",
+   "gen": "pendola",
+   "dims": "elemento",
+   "params": {
+    "tipo": "péndola con recorte"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0186",
+   "nombre": "aislador de porcelana",
+   "familia": "catenaria",
+   "gen": "aislador",
+   "dims": "5-6 discos",
+   "params": {
+    "tipo": "aislador de porcelana"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0187",
+   "nombre": "aislador polimérico",
+   "familia": "catenaria",
+   "gen": "aislador",
+   "dims": "5-6 discos",
+   "params": {
+    "tipo": "aislador polimérico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0188",
+   "nombre": "aislador de vidrio",
+   "familia": "catenaria",
+   "gen": "aislador",
+   "dims": "5-6 discos",
+   "params": {
+    "tipo": "aislador de vidrio"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0189",
+   "nombre": "Anclaje con contrapeso (tapanco)",
+   "familia": "catenaria",
+   "gen": "anclaje",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Anclaje con contrapeso (tapanco)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0190",
+   "nombre": "Anclaje a pórtico",
+   "familia": "catenaria",
+   "gen": "anclaje",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Anclaje a pórtico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0191",
+   "nombre": "Seccionador de islas",
+   "familia": "catenaria",
+   "gen": "anclaje",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Seccionador de islas"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0192",
+   "nombre": "Interruptor de vía",
+   "familia": "catenaria",
+   "gen": "anclaje",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Interruptor de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0193",
+   "nombre": "Parallelo de alimentación",
+   "familia": "catenaria",
+   "gen": "anclaje",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Parallelo de alimentación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0194",
+   "nombre": "Subestación de tracción (caseta tipo)",
+   "familia": "catenaria",
+   "gen": "subestacion",
+   "dims": "20×10×6 m",
+   "params": {
+    "lx": 20,
+    "lz": 10,
+    "ly": 6
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0195",
+   "nombre": "Señal de parada",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.2 m",
+   "params": {
+    "altura": 3.2,
+    "aspecto": "fijo con luz roja"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0196",
+   "nombre": "Señal de anuncio de parada",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.5 m",
+   "params": {
+    "altura": 3.5,
+    "aspecto": "amarillo parpadeante"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0197",
+   "nombre": "Señal de anuncio de preaviso",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.5 m",
+   "params": {
+    "altura": 3.5,
+    "aspecto": "amarillo fijo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0198",
+   "nombre": "Señal de reanudar marcha",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.2 m",
+   "params": {
+    "altura": 3.2,
+    "aspecto": "verde"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0199",
+   "nombre": "Señal de maniobra",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.0 m",
+   "params": {
+    "altura": 3.0,
+    "aspecto": "luz azul-blanca"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0200",
+   "nombre": "Señal de fin de autorización",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.0 m",
+   "params": {
+    "altura": 3.0,
+    "aspecto": "blanco-f"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0201",
+   "nombre": "Señal de limitación de velocidad (ETCS)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.0 m",
+   "params": {
+    "altura": 3.0,
+    "aspecto": "baliza+aspecto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0202",
+   "nombre": "Señal ERTMS L2 (baliza Eurobaliza)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.0 m",
+   "params": {
+    "altura": 3.0,
+    "aspecto": "baliza"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0203",
+   "nombre": "Señal de cambio de vía (desvío)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.2 m",
+   "params": {
+    "altura": 3.2,
+    "aspecto": "luz angular"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0204",
+   "nombre": "Señal de protección de paso a nivel",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "h 3.0 m",
+   "params": {
+    "altura": 3.0,
+    "aspecto": "rojo intermitente"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0205",
+   "nombre": "Eurobaliza (baliza ETCS)",
+   "familia": "senial",
+   "gen": "baliza",
+   "dims": "elemento embutido",
+   "params": {
+    "tipo": "Eurobaliza (baliza ETCS)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0206",
+   "nombre": "Euroloop (extensión electrónica)",
+   "familia": "senial",
+   "gen": "baliza",
+   "dims": "elemento embutido",
+   "params": {
+    "tipo": "Euroloop (extensión electrónica)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0207",
+   "nombre": "LTV (punto informativo)",
+   "familia": "senial",
+   "gen": "baliza",
+   "dims": "elemento embutido",
+   "params": {
+    "tipo": "LTV (punto informativo)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0208",
+   "nombre": "Hito kilométrico",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Hito kilométrico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0209",
+   "nombre": "Hito hectométrico",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Hito hectométrico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0210",
+   "nombre": "Señal de límite de maniobras (tablero)",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de límite de maniobras (tablero)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0211",
+   "nombre": "Placa de gálibo",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Placa de gálibo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0212",
+   "nombre": "Señal de topes de retaco",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de topes de retaco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0213",
+   "nombre": "Señal de localización (PRL)",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de localización (PRL)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0214",
+   "nombre": "Señal de inicio de circular con une",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de inicio de circular con une"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0215",
+   "nombre": "Señal de estación (placa de nombre)",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de estación (placa de nombre)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0216",
+   "nombre": "Faro de paso a nivel (cuarto luminoso)",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Faro de paso a nivel (cuarto luminoso)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0217",
+   "nombre": "Barrera de paso a nivel",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Barrera de paso a nivel"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0218",
+   "nombre": "Semibarrera de paso a nivel",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Semibarrera de paso a nivel"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0219",
+   "nombre": "Panel de encarrilado",
+   "familia": "senial",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Panel de encarrilado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0220",
+   "nombre": "Tren S-103 (Velaro E)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "8 coches · 380 km/h",
+   "params": {
+    "series": "S-103 (Velaro E)",
+    "coches": 8,
+    "vmax": "380"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0221",
+   "nombre": "Tren S-112 (Velaro)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "8 coches · 380 km/h",
+   "params": {
+    "series": "S-112 (Velaro)",
+    "coches": 8,
+    "vmax": "380"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0222",
+   "nombre": "Tren S-100 (AVE)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "8 coches · 300 km/h",
+   "params": {
+    "series": "S-100 (AVE)",
+    "coches": 8,
+    "vmax": "300"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0223",
+   "nombre": "Tren S-130 (Alvia)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "13 coches · 250 km/h",
+   "params": {
+    "series": "S-130 (Alvia)",
+    "coches": 13,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0224",
+   "nombre": "Tren S-730 (Alvia híbrido)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "13 coches · 250 km/h",
+   "params": {
+    "series": "S-730 (Alvia híbrido)",
+    "coches": 13,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0225",
+   "nombre": "Tren S-121 (Alvia)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "9 coches · 250 km/h",
+   "params": {
+    "series": "S-121 (Alvia)",
+    "coches": 9,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0226",
+   "nombre": "Tren S-106 (Talgo Avril)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "11 coches · 330 km/h",
+   "params": {
+    "series": "S-106 (Talgo Avril)",
+    "coches": 11,
+    "vmax": "330"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0227",
+   "nombre": "Tren S-107 (Talgo AVRIL G3)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "11 coches · 330 km/h",
+   "params": {
+    "series": "S-107 (Talgo AVRIL G3)",
+    "coches": 11,
+    "vmax": "330"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0228",
+   "nombre": "Tren S-104 (Avant)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "8 coches · 250 km/h",
+   "params": {
+    "series": "S-104 (Avant)",
+    "coches": 8,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0229",
+   "nombre": "Tren S-114 (Avant)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "8 coches · 250 km/h",
+   "params": {
+    "series": "S-114 (Avant)",
+    "coches": 8,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0230",
+   "nombre": "Tren S-599 (Altaria)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "9 coches · 200 km/h",
+   "params": {
+    "series": "S-599 (Altaria)",
+    "coches": 9,
+    "vmax": "200"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0231",
+   "nombre": "Tren S-449 (Regional)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 160 km/h",
+   "params": {
+    "series": "S-449 (Regional)",
+    "coches": 3,
+    "vmax": "160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0232",
+   "nombre": "Tren S-464 (Cercanías Civia)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "4 coches · 120 km/h",
+   "params": {
+    "series": "S-464 (Cercanías Civia)",
+    "coches": 4,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0233",
+   "nombre": "Tren S-450 (Cercanías)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "6 coches · 120 km/h",
+   "params": {
+    "series": "S-450 (Cercanías)",
+    "coches": 6,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0234",
+   "nombre": "Tren S-598 (Intercity diesel)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 180 km/h",
+   "params": {
+    "series": "S-598 (Intercity diesel)",
+    "coches": 3,
+    "vmax": "180"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0235",
+   "nombre": "Tren S-599.2 (Intercity)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 200 km/h",
+   "params": {
+    "series": "S-599.2 (Intercity)",
+    "coches": 3,
+    "vmax": "200"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0236",
+   "nombre": "Locomotora S-252 ( eléctrica)",
+   "familia": "material_rodante",
+   "gen": "locomotora",
+   "dims": "1 vehículo",
+   "params": {
+    "series": "S-252"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0237",
+   "nombre": "Locomotora S-333 (diésel)",
+   "familia": "material_rodante",
+   "gen": "locomotora",
+   "dims": "1 vehículo",
+   "params": {
+    "series": "S-333"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0238",
+   "nombre": "Vagón de mercancías tipo E",
+   "familia": "material_rodante",
+   "gen": "vagon",
+   "dims": "1 vehículo",
+   "params": {
+    "tipo": "mercancías"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0239",
+   "nombre": "Gálibo GC (líneas AV)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo GC (líneas AV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0240",
+   "nombre": "Gálibo GB (convencional)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo GB (convencional)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0241",
+   "nombre": "Gálibo GA (especial)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo GA (especial)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0242",
+   "nombre": "Gálibo de pasarela PE",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo de pasarela PE"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0243",
+   "nombre": "Gálibo de plataforma",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo de plataforma"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0244",
+   "nombre": "Gálibo para catenaria",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo para catenaria"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0245",
+   "nombre": "Andén lateral 200 m",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "longitud de andén",
+   "params": {
+    "tipo": "Andén lateral 200 m"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0246",
+   "nombre": "Andén central 400 m",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "longitud de andén",
+   "params": {
+    "tipo": "Andén central 400 m"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0247",
+   "nombre": "Andén de 550 m (AVE)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "longitud de andén",
+   "params": {
+    "tipo": "Andén de 550 m (AVE)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0248",
+   "nombre": "Andén de 720 m (AVE)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "longitud de andén",
+   "params": {
+    "tipo": "Andén de 720 m (AVE)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0249",
+   "nombre": "Marquesina de andén",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Marquesina de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0250",
+   "nombre": "Marquesina integral de andén",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Marquesina integral de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0251",
+   "nombre": "Caseta de técnicos",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Caseta de técnicos"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0252",
+   "nombre": "Caseta de SAI",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Caseta de SAI"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0253",
+   "nombre": "Pabellón de viajeros pequeño",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Pabellón de viajeros pequeño"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0254",
+   "nombre": "Pabellón de viajeros medio",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Pabellón de viajeros medio"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0255",
+   "nombre": "Terminal de AV",
+   "familia": "estacion",
+   "gen": "edificio",
+   "dims": "edificación",
+   "params": {
+    "tipo": "Terminal de AV"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0256",
+   "nombre": "Tornos de acceso",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Tornos de acceso"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0257",
+   "nombre": "Barandilla de andén",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Barandilla de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0258",
+   "nombre": "Papelera de andén",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Papelera de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0259",
+   "nombre": "Banco de andén",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Banco de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0260",
+   "nombre": "Tótem informativo",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Tótem informativo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0261",
+   "nombre": "Máquina de billetes",
+   "familia": "estacion",
+   "gen": "mobiliario",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Máquina de billetes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0262",
+   "nombre": "Poste GSM-R",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Poste GSM-R"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0263",
+   "nombre": "Poste GSM-R con repetidor",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Poste GSM-R con repetidor"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0264",
+   "nombre": "Cable de fibra en zanja (tubo)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Cable de fibra en zanja (tubo)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0265",
+   "nombre": "Cañera de telecomunicaciones",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Cañera de telecomunicaciones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0266",
+   "nombre": "Armario de vías (blanco ADIF)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Armario de vías (blanco ADIF)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0267",
+   "nombre": "Caseta de enclavamiento electrónico",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Caseta de enclavamiento electrónico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0268",
+   "nombre": "Antena GSM-R en torre",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Antena GSM-R en torre"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0269",
+   "nombre": "Torre de comunicaciones",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Torre de comunicaciones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0270",
+   "nombre": "Cepillo de tierra (SAA)",
+   "familia": "telecom",
+   "gen": "retorno",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Cepillo de tierra (SAA)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0271",
+   "nombre": "Retorno de tracción",
+   "familia": "telecom",
+   "gen": "retorno",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Retorno de tracción"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0272",
+   "nombre": "Conector transversal de vía",
+   "familia": "telecom",
+   "gen": "retorno",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Conector transversal de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0273",
+   "nombre": "Conexión equipotencial de puentes",
+   "familia": "telecom",
+   "gen": "retorno",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Conexión equipotencial de puentes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0274",
+   "nombre": "Vallado perimetral de 2 m",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Vallado perimetral de 2 m"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0275",
+   "nombre": "Vallado de malla simple",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Vallado de malla simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0276",
+   "nombre": "Puerta de acceso con cerradura",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Puerta de acceso con cerradura"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0277",
+   "nombre": "Caminos de servicio (pista de 3,5 m)",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Caminos de servicio (pista de 3,5 m)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0278",
+   "nombre": "Pista de acceso en firme de zahorra",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Pista de acceso en firme de zahorra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0279",
+   "nombre": "Paso de servicio hormigonado",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Paso de servicio hormigonado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0280",
+   "nombre": "Vado de acceso a fincas",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Vado de acceso a fincas"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0281",
+   "nombre": "Escalera de acceso a plataforma",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Escalera de acceso a plataforma"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0282",
+   "nombre": "Rampa de acceso para mantenimiento",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Rampa de acceso para mantenimiento"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0283",
+   "nombre": "Señal vertical de obra",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento temporal",
+   "params": {
+    "tipo": "Señal vertical de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0284",
+   "nombre": "Baliza de obra",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento temporal",
+   "params": {
+    "tipo": "Baliza de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0285",
+   "nombre": "Valla de obra",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento temporal",
+   "params": {
+    "tipo": "Valla de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0286",
+   "nombre": "Terreno: terreno natural (roca)",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "terreno natural (roca)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0287",
+   "nombre": "Terreno: terreno natural (granular)",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "terreno natural (granular)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0288",
+   "nombre": "Terreno: material de préstamo",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "material de préstamo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0289",
+   "nombre": "Terreno: material de explotación",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "material de explotación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0290",
+   "nombre": "Terreno: escollera de zanja",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "escollera de zanja"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0291",
+   "nombre": "Terreno: suelo mejorado (seleccionado)",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "suelo mejorado (seleccionado)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0292",
+   "nombre": "Terreno: suelo estabilizado con cemento",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "volumen",
+   "params": {
+    "tipo": "suelo estabilizado con cemento"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0293",
+   "nombre": "Desvío simple recto-curveado",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Desvío simple recto-curveado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0294",
+   "nombre": "Desvío simple recto-recto",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Desvío simple recto-recto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0295",
+   "nombre": "Desvío interior de cruzamiento",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Desvío interior de cruzamiento"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0296",
+   "nombre": "Cruzamiento simple",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Cruzamiento simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0297",
+   "nombre": "Cruzamiento de vía (diamante)",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Cruzamiento de vía (diamante)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0298",
+   "nombre": "Desvío compensado",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Desvío compensado"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0299",
+   "nombre": "Aparato de vía con accionamiento eléctrico S-1000",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Aparato de vía con accionamiento eléctrico S-1000"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0300",
+   "nombre": "Aparato de vía con accionamiento hidráulico",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según número de agujas",
+   "params": {
+    "tipo": "Aparato de vía con accionamiento hidráulico"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0301",
+   "nombre": "Área de acopio de balasto",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Área de acopio de balasto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0302",
+   "nombre": "Área de acopio de tierra",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Área de acopio de tierra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0303",
+   "nombre": "Área de carga de tren de obra",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Área de carga de tren de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0304",
+   "nombre": "Rampa de acceso a plataforma para trenes de obra",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Rampa de acceso a plataforma para trenes de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0305",
+   "nombre": "Cruce de trenes de obra",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Cruce de trenes de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0306",
+   "nombre": "Estación de obra provisional",
+   "familia": "obra_civil",
+   "gen": "acopio",
+   "dims": "área",
+   "params": {
+    "tipo": "Estación de obra provisional"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0307",
+   "nombre": "Pantógrafo de media velocidad (AX)",
+   "familia": "material_rodante",
+   "gen": "pantografo",
+   "dims": "elemento embarcado",
+   "params": {
+    "tipo": "Pantógrafo de media velocidad (AX)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0308",
+   "nombre": "Pantógrafo de alta velocidad (CX)",
+   "familia": "material_rodante",
+   "gen": "pantografo",
+   "dims": "elemento embarcado",
+   "params": {
+    "tipo": "Pantógrafo de alta velocidad (CX)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0309",
+   "nombre": "Pantógrafo de última generación (CX-AT)",
+   "familia": "material_rodante",
+   "gen": "pantografo",
+   "dims": "elemento embarcado",
+   "params": {
+    "tipo": "Pantógrafo de última generación (CX-AT)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0310",
+   "nombre": "Bobina de inducción magnética",
+   "familia": "material_rodante",
+   "gen": "pantografo",
+   "dims": "elemento embarcado",
+   "params": {
+    "tipo": "Bobina de inducción magnética"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0311",
+   "nombre": "Antena ETCS (Eurocab)",
+   "familia": "material_rodante",
+   "gen": "pantografo",
+   "dims": "elemento embarcado",
+   "params": {
+    "tipo": "Antena ETCS (Eurocab)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0312",
+   "nombre": "Talud con hidrosiembra",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Talud con hidrosiembra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0313",
+   "nombre": "Talud con manta de control de erosión",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Talud con manta de control de erosión"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0314",
+   "nombre": "Talud con ochorera de piedra",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Talud con ochorera de piedra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0315",
+   "nombre": "Talud con geocelda rellena",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Talud con geocelda rellena"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0316",
+   "nombre": "Ribera con poda de seguridad",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Ribera con poda de seguridad"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0317",
+   "nombre": "Franja de vegetación controlada",
+   "familia": "hidraulica",
+   "gen": "talud",
+   "dims": "tratamiento de talud",
+   "params": {
+    "tipo": "Franja de vegetación controlada"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0318",
+   "nombre": "Malla anticaída de talud (piso básico)",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Malla anticaída de talud (piso básico)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0319",
+   "nombre": "Malla de alta resistencia",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Malla de alta resistencia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0320",
+   "nombre": "Barera física anticaída (40 kJ)",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Barera física anticaída (40 kJ)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0321",
+   "nombre": "Cortina de anclajes",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Cortina de anclajes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0322",
+   "nombre": "Red de captura de bloques (500 kJ)",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Red de captura de bloques (500 kJ)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0323",
+   "nombre": "Barrera anticaída rígida",
+   "familia": "obra_fabrica",
+   "gen": "malla",
+   "dims": "protección de talud",
+   "params": {
+    "tipo": "Barrera anticaída rígida"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0324",
+   "nombre": "Fase 0: explanada",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 0
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0325",
+   "nombre": "Fase 1: subbalasto",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 1
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0326",
+   "nombre": "Fase 2: balasto",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 2
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0327",
+   "nombre": "Fase 3: vía montada",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 3
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0328",
+   "nombre": "Fase 4: catenaria",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 4
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0329",
+   "nombre": "Fase 5: señalización",
+   "familia": "obra_civil",
+   "gen": "fase",
+   "dims": "estado de obra",
+   "params": {
+    "fase": 5
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0330",
+   "nombre": "Puente viga-artesa — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0331",
+   "nombre": "Puente losa — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0332",
+   "nombre": "Puente viga — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0333",
+   "nombre": "Puente cajon — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0334",
+   "nombre": "Puente celosia — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0335",
+   "nombre": "Puente viga-artesa — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0336",
+   "nombre": "Puente losa — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0337",
+   "nombre": "Puente viga — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0338",
+   "nombre": "Puente cajon — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0339",
+   "nombre": "Puente celosia — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0340",
+   "nombre": "Puente viga-artesa — vano 20 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0341",
+   "nombre": "Puente losa — vano 20 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0342",
+   "nombre": "Puente viga — vano 20 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0343",
+   "nombre": "Puente cajon — vano 20 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0344",
+   "nombre": "Puente celosia — vano 20 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 20 m",
+   "params": {
+    "vano": 20,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0345",
+   "nombre": "Puente viga-artesa — vano 25 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0346",
+   "nombre": "Puente losa — vano 25 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0347",
+   "nombre": "Puente viga — vano 25 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0348",
+   "nombre": "Puente cajon — vano 25 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0349",
+   "nombre": "Puente celosia — vano 25 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 25 m",
+   "params": {
+    "vano": 25,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0350",
+   "nombre": "Puente viga-artesa — vano 30 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 30 m",
+   "params": {
+    "vano": 30,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0351",
+   "nombre": "Puente losa — vano 30 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 30 m",
+   "params": {
+    "vano": 30,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0352",
+   "nombre": "Puente viga — vano 30 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 30 m",
+   "params": {
+    "vano": 30,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0353",
+   "nombre": "Puente cajon — vano 30 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 30 m",
+   "params": {
+    "vano": 30,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0354",
+   "nombre": "Puente celosia — vano 30 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 30 m",
+   "params": {
+    "vano": 30,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0355",
+   "nombre": "Puente viga-artesa — vano 35 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0356",
+   "nombre": "Puente losa — vano 35 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0357",
+   "nombre": "Puente viga — vano 35 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0358",
+   "nombre": "Puente cajon — vano 35 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0359",
+   "nombre": "Puente celosia — vano 35 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 35 m",
+   "params": {
+    "vano": 35,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0360",
+   "nombre": "Puente viga-artesa — vano 40 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0361",
+   "nombre": "Puente losa — vano 40 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0362",
+   "nombre": "Puente viga — vano 40 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0363",
+   "nombre": "Puente cajon — vano 40 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0364",
+   "nombre": "Puente celosia — vano 40 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0365",
+   "nombre": "Puente viga-artesa — vano 45 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga-artesa",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "viga-artesa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0366",
+   "nombre": "Puente losa — vano 45 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-losa",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "losa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0367",
+   "nombre": "Puente viga — vano 45 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-viga",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "viga"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0368",
+   "nombre": "Puente cajon — vano 45 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-cajon",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "cajon"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0369",
+   "nombre": "Puente celosia — vano 45 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-celosia",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "tipologia": "celosia"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0370",
+   "nombre": "Paso inferior marco — vano 5 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 5 m",
+   "params": {
+    "vano": 5,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0371",
+   "nombre": "Paso inferior bóveda — vano 5 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 5 m",
+   "params": {
+    "vano": 5,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0372",
+   "nombre": "Paso inferior marco — vano 8 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 8 m",
+   "params": {
+    "vano": 8,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0373",
+   "nombre": "Paso inferior bóveda — vano 8 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 8 m",
+   "params": {
+    "vano": 8,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0374",
+   "nombre": "Paso inferior marco — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0375",
+   "nombre": "Paso inferior bóveda — vano 10 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 10 m",
+   "params": {
+    "vano": 10,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0376",
+   "nombre": "Paso inferior marco — vano 12 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 12 m",
+   "params": {
+    "vano": 12,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0377",
+   "nombre": "Paso inferior bóveda — vano 12 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 12 m",
+   "params": {
+    "vano": 12,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0378",
+   "nombre": "Paso inferior marco — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-marco",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "pi-marco"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0379",
+   "nombre": "Paso inferior bóveda — vano 15 m",
+   "familia": "obra_fabrica",
+   "gen": "puente-pi-boveda",
+   "dims": "vano 15 m",
+   "params": {
+    "vano": 15,
+    "tipologia": "pi-boveda"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0380",
+   "nombre": "Pila fusto circular — h=3 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 3 m",
+   "params": {
+    "altura": 3,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0381",
+   "nombre": "Pila en H — h=3 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 3 m",
+   "params": {
+    "altura": 3,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0382",
+   "nombre": "Pila fusto circular — h=5 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 5 m",
+   "params": {
+    "altura": 5,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0383",
+   "nombre": "Pila en H — h=5 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 5 m",
+   "params": {
+    "altura": 5,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0384",
+   "nombre": "Pila fusto circular — h=7 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 7 m",
+   "params": {
+    "altura": 7,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0385",
+   "nombre": "Pila en H — h=7 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 7 m",
+   "params": {
+    "altura": 7,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0386",
+   "nombre": "Pila fusto circular — h=9 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 9 m",
+   "params": {
+    "altura": 9,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0387",
+   "nombre": "Pila en H — h=9 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 9 m",
+   "params": {
+    "altura": 9,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0388",
+   "nombre": "Pila fusto circular — h=11 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 11 m",
+   "params": {
+    "altura": 11,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0389",
+   "nombre": "Pila en H — h=11 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 11 m",
+   "params": {
+    "altura": 11,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0390",
+   "nombre": "Pila fusto circular — h=13 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 13 m",
+   "params": {
+    "altura": 13,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0391",
+   "nombre": "Pila en H — h=13 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 13 m",
+   "params": {
+    "altura": 13,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0392",
+   "nombre": "Pila fusto circular — h=18 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 18 m",
+   "params": {
+    "altura": 18,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0393",
+   "nombre": "Pila en H — h=18 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 18 m",
+   "params": {
+    "altura": 18,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0394",
+   "nombre": "Pila fusto circular — h=22 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 22 m",
+   "params": {
+    "altura": 22,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0395",
+   "nombre": "Pila en H — h=22 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 22 m",
+   "params": {
+    "altura": 22,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0396",
+   "nombre": "Pila fusto circular — h=28 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 28 m",
+   "params": {
+    "altura": 28,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0397",
+   "nombre": "Pila en H — h=28 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 28 m",
+   "params": {
+    "altura": 28,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0398",
+   "nombre": "Pila fusto circular — h=35 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 35 m",
+   "params": {
+    "altura": 35,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0399",
+   "nombre": "Pila en H — h=35 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 35 m",
+   "params": {
+    "altura": 35,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0400",
+   "nombre": "Pila fusto circular — h=45 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 45 m",
+   "params": {
+    "altura": 45,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0401",
+   "nombre": "Pila en H — h=45 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 45 m",
+   "params": {
+    "altura": 45,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0402",
+   "nombre": "Pila fusto circular — h=55 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-fusto",
+   "dims": "h 55 m",
+   "params": {
+    "altura": 55,
+    "forma": "fusto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0403",
+   "nombre": "Pila en H — h=55 m",
+   "familia": "obra_fabrica",
+   "gen": "pila-H",
+   "dims": "h 55 m",
+   "params": {
+    "altura": 55,
+    "forma": "H"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0404",
+   "nombre": "pórtico con postes IPN — vano 40 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0405",
+   "nombre": "ménsula simple — vano 40 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0406",
+   "nombre": "ménsula con registro — vano 40 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0407",
+   "nombre": "pórtico en celosía — vano 40 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 40 m",
+   "params": {
+    "vano": 40,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0408",
+   "nombre": "pórtico con postes IPN — vano 45 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0409",
+   "nombre": "ménsula simple — vano 45 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0410",
+   "nombre": "ménsula con registro — vano 45 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0411",
+   "nombre": "pórtico en celosía — vano 45 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 45 m",
+   "params": {
+    "vano": 45,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0412",
+   "nombre": "pórtico con postes IPN — vano 50 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0413",
+   "nombre": "ménsula simple — vano 50 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0414",
+   "nombre": "ménsula con registro — vano 50 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0415",
+   "nombre": "pórtico en celosía — vano 50 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 50 m",
+   "params": {
+    "vano": 50,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0416",
+   "nombre": "pórtico con postes IPN — vano 55 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0417",
+   "nombre": "ménsula simple — vano 55 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0418",
+   "nombre": "ménsula con registro — vano 55 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0419",
+   "nombre": "pórtico en celosía — vano 55 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 55 m",
+   "params": {
+    "vano": 55,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0420",
+   "nombre": "pórtico con postes IPN — vano 60 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0421",
+   "nombre": "ménsula simple — vano 60 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0422",
+   "nombre": "ménsula con registro — vano 60 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0423",
+   "nombre": "pórtico en celosía — vano 60 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 60 m",
+   "params": {
+    "vano": 60,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0424",
+   "nombre": "pórtico con postes IPN — vano 65 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 65 m",
+   "params": {
+    "vano": 65,
+    "fam": "pórtico con postes IPN"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0425",
+   "nombre": "ménsula simple — vano 65 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 65 m",
+   "params": {
+    "vano": 65,
+    "fam": "ménsula simple"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0426",
+   "nombre": "ménsula con registro — vano 65 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 65 m",
+   "params": {
+    "vano": 65,
+    "fam": "ménsula con registro"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0427",
+   "nombre": "pórtico en celosía — vano 65 m",
+   "familia": "catenaria",
+   "gen": "portico",
+   "dims": "vano 65 m",
+   "params": {
+    "vano": 65,
+    "fam": "pórtico en celosía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0428",
+   "nombre": "Poste de catenaria h=5.2 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 5.2 m",
+   "params": {
+    "altura": 5.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0429",
+   "nombre": "Poste de catenaria h=5.4 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 5.4 m",
+   "params": {
+    "altura": 5.4
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0430",
+   "nombre": "Poste de catenaria h=5.8 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 5.8 m",
+   "params": {
+    "altura": 5.8
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0431",
+   "nombre": "Poste de catenaria h=6.2 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 6.2 m",
+   "params": {
+    "altura": 6.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0432",
+   "nombre": "Poste de catenaria h=6.8 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 6.8 m",
+   "params": {
+    "altura": 6.8
+   },
+   "nota": ""
+  },
+  {
+   "id": "CAT-0433",
+   "nombre": "Poste de catenaria h=7.2 m",
+   "familia": "catenaria",
+   "gen": "poste",
+   "dims": "h 7.2 m",
+   "params": {
+    "altura": 7.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0434",
+   "nombre": "Bajante circular Ø0.3 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.3 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.3
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0435",
+   "nombre": "Bajante circular Ø0.45 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.45 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.45
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0436",
+   "nombre": "Bajante circular Ø0.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.5 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0437",
+   "nombre": "Bajante circular Ø0.7 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.7 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.7
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0438",
+   "nombre": "Bajante circular Ø0.9 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 0.9 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 0.9
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0439",
+   "nombre": "Bajante circular Ø1.1 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.1 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.1
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0440",
+   "nombre": "Bajante circular Ø1.3 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.3 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.3
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0441",
+   "nombre": "Bajante circular Ø1.6 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.6 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0442",
+   "nombre": "Bajante circular Ø1.8 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 1.8 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 1.8
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0443",
+   "nombre": "Bajante circular Ø2.2 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.2 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 2.2
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0444",
+   "nombre": "Bajante circular Ø2.5 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 2.5 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 2.5
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0445",
+   "nombre": "Bajante circular Ø3.0 m",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "Ø 3.0 m",
+   "params": {
+    "tipo": "Bajante circular",
+    "diametro": 3.0
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0446",
+   "nombre": "Sifón invertido",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Sifón invertido"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0447",
+   "nombre": "Canal de recogida de aguas (CECA)",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Canal de recogida de aguas (CECA)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0448",
+   "nombre": "Foso de defensa",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Foso de defensa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0449",
+   "nombre": "Dique de escollera en pie",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Dique de escollera en pie"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0450",
+   "nombre": "Muro de defensa fluvial",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Muro de defensa fluvial"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0451",
+   "nombre": "Pozo de bombeo",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Pozo de bombeo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0452",
+   "nombre": "Arqueta rompe-presiones",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Arqueta rompe-presiones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0453",
+   "nombre": "Balsa de retención temporal",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Balsa de retención temporal"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0454",
+   "nombre": "Canal de derivación",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Canal de derivación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "HID-0455",
+   "nombre": "Tubería de impulsión DN400",
+   "familia": "hidraulica",
+   "gen": "hidraulica",
+   "dims": "elemento hidráulico",
+   "params": {
+    "tipo": "Tubería de impulsión DN400"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0456",
+   "nombre": "Señal de parada diferida",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de parada diferida"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0457",
+   "nombre": "Señal de rebase",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de rebase"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0458",
+   "nombre": "Señal de inicio de zona de maniobras",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de inicio de zona de maniobras"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0459",
+   "nombre": "Señal de fin de zona de maniobras",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de fin de zona de maniobras"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0460",
+   "nombre": "Señal de esquiva (frente rojo)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de esquiva (frente rojo)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0461",
+   "nombre": "Señal de silencio (zona hospitalaria)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de silencio (zona hospitalaria)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0462",
+   "nombre": "Señal de aviso de estación",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de aviso de estación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0463",
+   "nombre": "Señal de cambio de tracción",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de cambio de tracción"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0464",
+   "nombre": "Señal de limitación 160",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de limitación 160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0465",
+   "nombre": "Señal de limitación 200",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de limitación 200"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0466",
+   "nombre": "Señal de limitación 220",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de limitación 220"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0467",
+   "nombre": "Señal de limitación 300",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de limitación 300"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0468",
+   "nombre": "Señal de reanudar LTV",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de reanudar LTV"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0469",
+   "nombre": "Señal de inicio de circuito de vía",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de inicio de circuito de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0470",
+   "nombre": "Señal de final de circuito de vía",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Señal de final de circuito de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0471",
+   "nombre": "Detector de caja caliente",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Detector de caja caliente"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0472",
+   "nombre": "Detector de Tamizaje (cajón)",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Detector de Tamizaje (cajón)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0473",
+   "nombre": "Fotocélula de ocupación",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Fotocélula de ocupación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0474",
+   "nombre": "Contador de ejes",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Contador de ejes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "SEN-0475",
+   "nombre": "Pedal de ayuda al arranque",
+   "familia": "senial",
+   "gen": "senial",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Pedal de ayuda al arranque"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0476",
+   "nombre": "Tren S-101 (Talgo AV)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "10 coches · 300 km/h",
+   "params": {
+    "series": "S-101 (Talgo AV)",
+    "coches": 10,
+    "vmax": "300"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0477",
+   "nombre": "Tren S-102 (Talgo 350)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "11 coches · 330 km/h",
+   "params": {
+    "series": "S-102 (Talgo 350)",
+    "coches": 11,
+    "vmax": "330"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0478",
+   "nombre": "Tren S-113 (Talgo 350)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "11 coches · 330 km/h",
+   "params": {
+    "series": "S-113 (Talgo 350)",
+    "coches": 11,
+    "vmax": "330"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0479",
+   "nombre": "Tren S-120 (Alvia)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "5 coches · 250 km/h",
+   "params": {
+    "series": "S-120 (Alvia)",
+    "coches": 5,
+    "vmax": "250"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0480",
+   "nombre": "Tren S-598.1 (diésel)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 160 km/h",
+   "params": {
+    "series": "S-598.1 (diésel)",
+    "coches": 3,
+    "vmax": "160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0481",
+   "nombre": "Tren S-592 (diésel RENFE)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 160 km/h",
+   "params": {
+    "series": "S-592 (diésel RENFE)",
+    "coches": 3,
+    "vmax": "160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0482",
+   "nombre": "Tren S-592.300 (diésel)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 160 km/h",
+   "params": {
+    "series": "S-592.300 (diésel)",
+    "coches": 3,
+    "vmax": "160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0483",
+   "nombre": "Tren S-470 (eléctrico regional)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 160 km/h",
+   "params": {
+    "series": "S-470 (eléctrico regional)",
+    "coches": 3,
+    "vmax": "160"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0484",
+   "nombre": "Tren S-440 (cercanías)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 120 km/h",
+   "params": {
+    "series": "S-440 (cercanías)",
+    "coches": 3,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0485",
+   "nombre": "Tren S-440R (cercanías reformado)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "3 coches · 120 km/h",
+   "params": {
+    "series": "S-440R (cercanías reformado)",
+    "coches": 3,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0486",
+   "nombre": "Tren S-463 (Cercanías Civia corto)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "2 coches · 120 km/h",
+   "params": {
+    "series": "S-463 (Cercanías Civia corto)",
+    "coches": 2,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0487",
+   "nombre": "Tren S-465 (Cercanías Civia 5 coches)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "5 coches · 120 km/h",
+   "params": {
+    "series": "S-465 (Cercanías Civia 5 coches)",
+    "coches": 5,
+    "vmax": "120"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0488",
+   "nombre": "Tren S-2994 (châssis de maniobras)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "1 coches · 60 km/h",
+   "params": {
+    "series": "S-2994 (châssis de maniobras)",
+    "coches": 1,
+    "vmax": "60"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0489",
+   "nombre": "Tren S-319 (diésel mercancías)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "1 coches · 100 km/h",
+   "params": {
+    "series": "S-319 (diésel mercancías)",
+    "coches": 1,
+    "vmax": "100"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0490",
+   "nombre": "Tren S-335 (diésel mercancías)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "1 coches · 100 km/h",
+   "params": {
+    "series": "S-335 (diésel mercancías)",
+    "coches": 1,
+    "vmax": "100"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0491",
+   "nombre": "Tren S-256 (eléctrica mercancías)",
+   "familia": "material_rodante",
+   "gen": "tren",
+   "dims": "1 coches · 100 km/h",
+   "params": {
+    "series": "S-256 (eléctrica mercancías)",
+    "coches": 1,
+    "vmax": "100"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0492",
+   "nombre": "Vagón tolva de balasto",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón tolva de balasto"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0493",
+   "nombre": "Vagón plataforma para vías",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón plataforma para vías"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0494",
+   "nombre": "Vagón cisterna",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón cisterna"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0495",
+   "nombre": "Vagón cerrado tipo Hbis",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón cerrado tipo Hbis"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0496",
+   "nombre": "Vagón de borde bajo tipo Eanos",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón de borde bajo tipo Eanos"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0497",
+   "nombre": "Tren de alisado Plasser APT",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Tren de alisado Plasser APT"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0498",
+   "nombre": "Tren de alineación Plasser 09-3X",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Tren de alineación Plasser 09-3X"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0499",
+   "nombre": "Bastidor de transporte de carril",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Bastidor de transporte de carril"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0500",
+   "nombre": "Máquina de cambio de traviesas",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Máquina de cambio de traviesas"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0501",
+   "nombre": "Máquina de cribar balasto CSS-96",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Máquina de cribar balasto CSS-96"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0502",
+   "nombre": "Vagón de obra para catenaria",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Vagón de obra para catenaria"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0503",
+   "nombre": "Coche taller de obra",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Coche taller de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "MAT-0504",
+   "nombre": "Coche de trabajo en catenaria (TRC)",
+   "familia": "material_rodante",
+   "gen": "obra_tren",
+   "dims": "material de obra",
+   "params": {
+    "tipo": "Coche de trabajo en catenaria (TRC)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0505",
+   "nombre": "Andén insular",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Andén insular"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0506",
+   "nombre": "Andén tipo terminal (topes)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Andén tipo terminal (topes)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0507",
+   "nombre": "Andén provisional de obra",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Andén provisional de obra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0508",
+   "nombre": "Marquesina corta (20 m)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Marquesina corta (20 m)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0509",
+   "nombre": "Marquesina media (40 m)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Marquesina media (40 m)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0510",
+   "nombre": "Marquesina larga (60 m)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Marquesina larga (60 m)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0511",
+   "nombre": "Escalera fija de acceso a andén",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Escalera fija de acceso a andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0512",
+   "nombre": "Escalera mecánica de andén",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Escalera mecánica de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0513",
+   "nombre": "Ascensor de andén",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Ascensor de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0514",
+   "nombre": "Rampa accesible de andén",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Rampa accesible de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0515",
+   "nombre": "Túnel de acceso bajo vías",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Túnel de acceso bajo vías"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0516",
+   "nombre": "Paso elevado de viajeros (PEV)",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Paso elevado de viajeros (PEV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0517",
+   "nombre": "Aparcamiento disuasorio",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Aparcamiento disuasorio"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0518",
+   "nombre": "Darse de vuelta (loop) de trenes",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Darse de vuelta (loop) de trenes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "EST-0519",
+   "nombre": "Calle de apartado de trenes",
+   "familia": "estacion",
+   "gen": "anden",
+   "dims": "elemento de estación",
+   "params": {
+    "tipo": "Calle de apartado de trenes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0520",
+   "nombre": "Desvío tipo 760-1:9",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío tipo 760-1:9"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0521",
+   "nombre": "Desvío tipo 760-1:12",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío tipo 760-1:12"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0522",
+   "nombre": "Desvío tipo 760-1:18,5",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío tipo 760-1:18,5"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0523",
+   "nombre": "Desvío tipo 760-1:22,5",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío tipo 760-1:22,5"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0524",
+   "nombre": "Desvío tipo 760-1:33,3",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío tipo 760-1:33,3"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0525",
+   "nombre": "Desvío de alta velocidad 1:42",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío de alta velocidad 1:42"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0526",
+   "nombre": "Cruzamiento simple 1:9",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Cruzamiento simple 1:9"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0527",
+   "nombre": "Cruzamiento simple 1:12",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Cruzamiento simple 1:12"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0528",
+   "nombre": "Diamante 60°",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Diamante 60°"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0529",
+   "nombre": "Diamante 120°",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Diamante 120°"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0530",
+   "nombre": "Triple desvío",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Triple desvío"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0531",
+   "nombre": "Desvío curvo interior",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Desvío curvo interior"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0532",
+   "nombre": "Aparato con movable point frog (MPF)",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Aparato con movable point frog (MPF)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0533",
+   "nombre": "Aparato con corazón fijo",
+   "familia": "via",
+   "gen": "aparato",
+   "dims": "según radio",
+   "params": {
+    "tipo": "Aparato con corazón fijo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0534",
+   "nombre": "Excavación en roca sana",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Excavación en roca sana"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0535",
+   "nombre": "Excavación en roca media",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Excavación en roca media"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0536",
+   "nombre": "Excavación en tierra",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Excavación en tierra"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0537",
+   "nombre": "Terraplén homogéneo de préstamo",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Terraplén homogéneo de préstamo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0538",
+   "nombre": "Terraplén mixto (núcleo/filtro)",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Terraplén mixto (núcleo/filtro)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0539",
+   "nombre": "Terraplén con escollera",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Terraplén con escollera"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0540",
+   "nombre": "Mejora de terreno con geosintéticos",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Mejora de terreno con geosintéticos"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0541",
+   "nombre": "Columnas de grava",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Columnas de grava"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0542",
+   "nombre": "Columnas rígidas (CFA)",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Columnas rígidas (CFA)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0543",
+   "nombre": "Compactación dinámica",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Compactación dinámica"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0544",
+   "nombre": "Precarga con drenes",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Precarga con drenes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GEO-0545",
+   "nombre": "Inyecciones de consolidación",
+   "familia": "geotecnia",
+   "gen": "terreno",
+   "dims": "unidad de terreno",
+   "params": {
+    "tipo": "Inyecciones de consolidación"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0546",
+   "nombre": "Explanada en terraplén de 2 m",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Explanada en terraplén de 2 m"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0547",
+   "nombre": "Explanada en desmonte de 2 m",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Explanada en desmonte de 2 m"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0548",
+   "nombre": "Plataforma de vía (imprimación)",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Plataforma de vía (imprimación)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0549",
+   "nombre": "Pista de servicio en banca",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Pista de servicio en banca"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0550",
+   "nombre": "Paso de maquinaria (paso de obra)",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Paso de maquinaria (paso de obra)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0551",
+   "nombre": "Zanja de telecomunicaciones con tapa de hormigón",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Zanja de telecomunicaciones con tapa de hormigón"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0552",
+   "nombre": "Zanja de alta tensión",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Zanja de alta tensión"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0553",
+   "nombre": "Arqueta de telecomunicaciones",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Arqueta de telecomunicaciones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0554",
+   "nombre": "Arqueta de alta tensión",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Arqueta de alta tensión"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0555",
+   "nombre": "Cepo de anclaje de catenaria",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Cepo de anclaje de catenaria"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0556",
+   "nombre": "Masa de anclaje (deadman)",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Masa de anclaje (deadman)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0557",
+   "nombre": "Vallado de malla con alambre",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Vallado de malla con alambre"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0558",
+   "nombre": "Vallado de malla electro-soldada",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Vallado de malla electro-soldada"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0559",
+   "nombre": "Escalera de pies (montantes) de acceso",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Escalera de pies (montantes) de acceso"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0560",
+   "nombre": "Pasarela de servicio sobre cuneta",
+   "familia": "obra_civil",
+   "gen": "obracivil",
+   "dims": "elemento",
+   "params": {
+    "tipo": "Pasarela de servicio sobre cuneta"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0561",
+   "nombre": "Cable de alimentación de catenaria (AT)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Cable de alimentación de catenaria (AT)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0562",
+   "nombre": "Cable de retorno de tracción",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Cable de retorno de tracción"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0563",
+   "nombre": "Caja de conexión de tierra (SAA)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Caja de conexión de tierra (SAA)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0564",
+   "nombre": "Conmutador de seccionamiento",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Conmutador de seccionamiento"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0565",
+   "nombre": "Ficha de conexión de vía (FPV)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Ficha de conexión de vía (FPV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0566",
+   "nombre": "Bobina de sintonía de bloqueo",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Bobina de sintonía de bloqueo"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0567",
+   "nombre": "Señal de ocupación de vía (SOV)",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Señal de ocupación de vía (SOV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "TEL-0568",
+   "nombre": "Tag RFID de vía",
+   "familia": "telecom",
+   "gen": "telecom",
+   "dims": "elemento eléctrico",
+   "params": {
+    "tipo": "Tag RFID de vía"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0569",
+   "nombre": "Tendido UIC54 a 0.6 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC54 · 0.6 m",
+   "params": {
+    "perfil": "UIC54",
+    "sep": 0.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0570",
+   "nombre": "Tendido UIC54 a 0.625 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC54 · 0.625 m",
+   "params": {
+    "perfil": "UIC54",
+    "sep": 0.625
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0571",
+   "nombre": "Tendido UIC54 a 0.65 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC54 · 0.65 m",
+   "params": {
+    "perfil": "UIC54",
+    "sep": 0.65
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0572",
+   "nombre": "Tendido UIC60 a 0.6 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC60 · 0.6 m",
+   "params": {
+    "perfil": "UIC60",
+    "sep": 0.6
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0573",
+   "nombre": "Tendido UIC60 a 0.625 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC60 · 0.625 m",
+   "params": {
+    "perfil": "UIC60",
+    "sep": 0.625
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0574",
+   "nombre": "Tendido UIC60 a 0.65 m",
+   "familia": "via",
+   "gen": "tendido",
+   "dims": "UIC60 · 0.65 m",
+   "params": {
+    "perfil": "UIC60",
+    "sep": 0.65
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0575",
+   "nombre": "Placa de asiento de 4 agujeros",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Placa de asiento de 4 agujeros"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0576",
+   "nombre": "Placa de asiento de 6 agujeros",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Placa de asiento de 6 agujeros"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0577",
+   "nombre": "Aplaca de cuña para puentes",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Aplaca de cuña para puentes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0578",
+   "nombre": "Junta soldada aluminotérmica",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Junta soldada aluminotérmica"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0579",
+   "nombre": "Junta soldada por resistencia eléctrica",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Junta soldada por resistencia eléctrica"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0580",
+   "nombre": "Junta soldada por electroescoria",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Junta soldada por electroescoria"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0581",
+   "nombre": "Junta mecánica (mariposa)",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Junta mecánica (mariposa)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0582",
+   "nombre": "Tope de vía (topes de retaco)",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Tope de vía (topes de retaco)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "VIA-0583",
+   "nombre": "Tope de vía provisional (portátil)",
+   "familia": "via",
+   "gen": "sujecion",
+   "dims": "elemento de vía",
+   "params": {
+    "tipo": "Tope de vía provisional (portátil)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0584",
+   "nombre": "Gálibo de puente para AV (GC-AV)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo de puente para AV (GC-AV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0585",
+   "nombre": "Gálibo de puente para convencional (GB-AV)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo de puente para convencional (GB-AV)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0586",
+   "nombre": "Gálibo para vehículos de obra (GC-OBR)",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo para vehículos de obra (GC-OBR)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0587",
+   "nombre": "Gálibo de límite de andén",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo de límite de andén"
+   },
+   "nota": ""
+  },
+  {
+   "id": "GAL-0588",
+   "nombre": "Gálibo para cargas excepcionales",
+   "familia": "galibo",
+   "gen": "galibo",
+   "dims": "perfil de tolerancia",
+   "params": {
+    "tipo": "Gálibo para cargas excepcionales"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0589",
+   "nombre": "Muro MG-II (tierra reforzada)",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro MG-II (tierra reforzada)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0590",
+   "nombre": "Muro de pantallas con anclajes",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de pantallas con anclajes"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0591",
+   "nombre": "Muro de hormigón en masa",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de hormigón en masa"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0592",
+   "nombre": "Muro de escollera con frente de gaviones",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro de escollera con frente de gaviones"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0593",
+   "nombre": "Muro cellulaire (células de hormigón)",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Muro cellulaire (células de hormigón)"
+   },
+   "nota": ""
+  },
+  {
+   "id": "OBR-0594",
+   "nombre": "Pantalla de pilotes secantes",
+   "familia": "obra_fabrica",
+   "gen": "muro",
+   "dims": "contención",
+   "params": {
+    "tipo": "Pantalla de pilotes secantes"
+   },
+   "nota": ""
+  }
+ ]
+}

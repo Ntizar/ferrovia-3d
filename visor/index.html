@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es" data-nz-theme="dark" data-nz-marca="monocromo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferrovia 3D · Catálogo ferroviario español paramétrico</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ntizar/Aurora@v10.10.0/tokens.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ntizar/Aurora@v10.10.0/marcas/monocromo.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ntizar/Aurora@v10.10.0/packs/all.css">
+<style>
+  .fv-app { display: flex; flex-direction: column; height: 100dvh; }
+  .fv-cab { display: flex; align-items: center; justify-content: space-between; gap: var(--nz-esp-3); flex-wrap: wrap; padding-block: var(--nz-esp-2); }
+  .fv-cuerpo { display: flex; flex: 1; min-height: 0; gap: var(--nz-esp-3); }
+  .fv-escena { flex: 1; min-width: 0; position: relative; border: 1px solid var(--nz-border); border-radius: var(--nz-radio); overflow: hidden; }
+  .fv-escena canvas { display: block; width: 100%; height: 100%; }
+  .fv-panel { width: 24rem; flex-shrink: 0; overflow-y: auto; display: flex; flex-direction: column; gap: var(--nz-esp-3); }
+  .fv-buscador { width: 100%; }
+  .fv-lista { max-height: 30rem; overflow-y: auto; }
+  .fv-fila { cursor: pointer; }
+  .fv-fila.is-selected { background: color-mix(in oklch, var(--nz-signal-azul, #4c8dff) 15%, transparent); }
+  .fv-chips { display: flex; flex-wrap: wrap; gap: var(--nz-esp-1); }
+  @media (max-width: 960px) {
+    .fv-cuerpo { flex-direction: column; overflow-y: auto; }
+    .fv-escena { min-height: 50vh; flex: none; }
+    .fv-panel { width: 100%; overflow: visible; }
+  }
+</style>
+</head>
+<body class="nz">
+<div class="nz-container--app nz" style="padding-inline: var(--nz-gutter);">
+  <div class="fv-app">
+    <header class="fv-cab">
+      <div>
+        <h1 class="nz-h3" style="margin:0;">Ferrovia 3D</h1>
+        <p class="nz-lbl nz-lbl--accent" style="margin:0;">Catálogo paramétrico del ferrocarril español · <span id="fv-total">—</span> objetos <span id="fv-fam"></span></p>
+      </div>
+      <div class="nz-cluster">
+        <label class="nz-lbl" for="fv-buscar" style="position:absolute;left:-9999px;">Buscar</label>
+        <input class="nz-input fv-buscador" id="fv-buscar" type="search" placeholder="Buscar objeto…" style="width:16rem;">
+      </div>
+    </header>
+
+    <div class="nz-cluster" style="margin-bottom: var(--nz-esp-3);">
+      <div class="nz-kpi nz-kpi--accent"><span class="nz-kpi__label">Objetos</span><span class="nz-kpi__value" id="kpi-total">—</span></div>
+      <div class="nz-kpi"><span class="nz-kpi__label">Familias</span><span class="nz-kpi__value" id="kpi-fam">—</span></div>
+      <div class="nz-kpi"><span class="nz-kpi__label">Generadores 3D</span><span class="nz-kpi__value" id="kpi-gen">—</span></div>
+      <div class="nz-kpi nz-kpi--accent"><span class="nz-kpi__label">Renderizados</span><span class="nz-kpi__value" id="kpi-render">—</span></div>
+    </div>
+
+    <div class="fv-cuerpo">
+      <div class="fv-escena" id="escena">
+        <noscript><div class="nz-alert nz-alert--warning" style="margin:1rem;"><div class="nz-alert__body"><span class="nz-alert__title">JavaScript desactivado</span><span class="nz-alert__msg">La escena 3D necesita JavaScript y WebGL.</span></div></div></noscript>
+      </div>
+
+      <aside class="fv-panel">
+        <section class="nz-article">
+          <h2 class="nz-h4" style="margin-top:0;">Familias</h2>
+          <div class="fv-chips" id="chips" role="group" aria-label="Filtrar por familia"></div>
+        </section>
+        <section class="nz-article">
+          <h2 class="nz-h4" style="margin-top:0;">Catálogo</h2>
+          <div class="fv-lista">
+            <table class="nz-table" id="tabla">
+              <thead><tr><th>ID</th><th>Objeto</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </section>
+        <section class="nz-article" id="ficha" aria-live="polite">
+          <h2 class="nz-h4" style="margin-top:0;" id="ficha-titulo">Sin selección</h2>
+          <p class="nz-lbl" id="ficha-sub">Pulsa una fila o el objeto en 3D</p>
+          <div id="ficha-cuerpo"></div>
+        </section>
+      </aside>
+    </div>
+
+    <footer style="padding-block: var(--nz-esp-2); text-align:center;">
+      <span class="nz-lbl">Hecho con ❤️ por David Antizar</span>
+    </footer>
+  </div>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script>
+window.__errores = [];
+window.addEventListener('error', e => window.__errores.push(String(e.message || e)));
+</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { generarObjeto, MATS } from './ferrovia-gen.js';
+
+const BD = await (await fetch('datos/objetos.json')).json();
+document.getElementById('fv-total').textContent = BD.total;
+document.getElementById('kpi-total').textContent = BD.total.toLocaleString('es-ES');
+document.getElementById('kpi-fam').textContent = BD.familias.length;
+const gensUnicos = [...new Set(BD.objetos.map(o => o.gen))];
+document.getElementById('kpi-gen').textContent = gensUnicos.length;
+document.getElementById('fv-fam').textContent = '· ' + BD.familias.length + ' familias';
+
+const cs = getComputedStyle(document.documentElement);
+const tok = (n, fb) => (cs.getPropertyValue(n) || '').trim() || fb;
+const C_BG = tok('--nz-bg', '#000000');
+const C_TINTA = tok('--nz-text', '#ffffff');
+const C_AZUL = tok('--nz-signal-azul', '#4c8dff');
+
+/* ---------- escena ---------- */
+const cont = document.getElementById('escena');
+const renderer = new THREE.WebGLRenderer({ antialias: true });
+renderer.setPixelRatio(Math.min(devicePixelRatio, 2));
+cont.appendChild(renderer.domElement);
+const escena = new THREE.Scene();
+escena.background = new THREE.Color(C_BG);
+escena.fog = new THREE.Fog(C_BG, 120, 300);
+const camara = new THREE.PerspectiveCamera(50, 1, 0.1, 500);
+camara.position.set(18, 12, 26);
+const controles = new OrbitControls(camara, renderer.domElement);
+controles.enableDamping = true;
+escena.add(new THREE.HemisphereLight(0xffffff, 0x333340, 0.95));
+const sol = new THREE.DirectionalLight(0xffffff, 1.15); sol.position.set(20, 35, 14); escena.add(sol);
+const suelo = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.MeshStandardMaterial({ color: new THREE.Color(C_TINTA).multiplyScalar(0.06), roughness: 1 }));
+suelo.rotation.x = -Math.PI/2; suelo.position.y = -0.01;
+escena.add(suelo);
+const rejilla = new THREE.GridHelper(200, 50, 0x333333, 0x1c1c1c);
+escena.add(rejilla);
+
+/* ---------- render de objetos en cuadrícula ---------- */
+/* escala visual: cada objeto se normaliza para que quepa en una celda de ~8 m
+   (el tamaño real está en la ficha; aquí manda la comparabilidad) */
+const COLS = 14, SEP = 9;
+const idx = new Map();   // id -> { group, x, z }
+let renderizados = 0;
+const _bbox = new THREE.Box3(), _size = new THREE.Vector3();
+BD.objetos.forEach((o, i) => {
+  const g = generarObjeto(o);
+  if (!g) return;
+  _bbox.setFromObject(g);
+  _bbox.getSize(_size);
+  const maxDim = Math.max(_size.x, _size.y, _size.z) || 1;
+  const escala = Math.min(8 / maxDim, 4);   // nunca >4x (los chicos crecen, los grandes se encogen)
+  g.scale.setScalar(Math.max(escala, 0.25));
+  const col = i % COLS, fila = Math.floor(i / COLS);
+  const x = (col - COLS/2 + 0.5) * SEP;
+  const z = fila * SEP;
+  g.position.set(x, 0, z);
+  g.traverse(n => { if (n.isMesh || n.isLine){ n.userData.objId = o.id; } });
+  g.userData.id = o.id;
+  escena.add(g);
+  idx.set(o.id, { group: g, x, z, obj: o });
+  renderizados++;
+});
+document.getElementById('kpi-render').textContent = renderizados.toLocaleString('es-ES');
+
+/* centrar cámara sobre la cuadrícula */
+const filas = Math.ceil(BD.objetos.length / COLS);
+controles.target.set(0, 1.5, filas * SEP / 2);
+camara.position.set(40, 55, filas * SEP / 2 + 35);
+camara.far = 800; camara.updateProjectionMatrix();
+escena.fog = new THREE.Fog(C_BG, 150, 600);
+
+/* ---------- UI: chips por familia ---------- */
+const contChips = document.getElementById('chips');
+let filtroFamilia = null;
+const chipTodos = document.createElement('button');
+chipTodos.className = 'nz-btn nz-btn--soft nz-btn--sm is-active';
+chipTodos.textContent = 'Todos (' + BD.total + ')';
+chipTodos.addEventListener('click', () => { filtroFamilia = null; activarChip(chipTodos); aplicarFiltros(); });
+contChips.appendChild(chipTodos);
+BD.familias.forEach(fam => {
+  const n = BD.objetos.filter(o => o.familia === fam).length;
+  const b = document.createElement('button');
+  b.className = 'nz-btn nz-btn--soft nz-btn--sm';
+  b.textContent = fam + ' (' + n + ')';
+  b.addEventListener('click', () => { filtroFamilia = filtroFamilia === fam ? null : fam; activarChip(b); aplicarFiltros(); });
+  contChips.appendChild(b);
+});
+function activarChip(btn){ contChips.querySelectorAll('.nz-btn').forEach(x => x.classList.toggle('is-active', x === btn)); }
+function aplicarFiltros(){
+  const q = document.getElementById('fv-buscar').value.toLowerCase();
+  const visibles = new Set();
+  let bbox = new THREE.Box3();
+  let alguno = false;
+  idx.forEach((v, id) => {
+    const o = v.obj;
+    const okFam = !filtroFamilia || o.familia === filtroFamilia;
+    const okQ = !q || o.nombre.toLowerCase().includes(q) || o.id.toLowerCase().includes(q);
+    const ok = okFam && okQ;
+    v.group.visible = ok;
+    if (ok){ visibles.add(id); if (!alguno){ bbox.setFromObject(v.group); alguno = true; } else bbox.expandByObject(v.group); }
+  });
+  tbody.querySelectorAll('tr').forEach(tr => { tr.hidden = !visibles.has(tr.dataset.id); });
+  /* recentrar cámara sobre los visibles */
+  if (alguno){
+    const c = new THREE.Vector3(); bbox.getCenter(c);
+    const s = new THREE.Vector3(); bbox.getSize(s);
+    const radio = Math.max(s.x, s.z) / 2;
+    controles.target.copy(c);
+    const dir = camara.position.clone().sub(controles.target).normalize();
+    camara.position.copy(c).add(dir.multiplyScalar(Math.max(radio * 2.2, 18)));
+  }
+}
+
+/* ---------- UI: tabla ---------- */
+const tbody = document.querySelector('#tabla tbody');
+BD.objetos.forEach(o => {
+  const tr = document.createElement('tr');
+  tr.dataset.id = o.id;
+  tr.innerHTML = '<th scope="row">' + o.id + '</th><td>' + o.nombre + '</td>';
+  tr.addEventListener('click', () => seleccionar(o.id));
+  tbody.appendChild(tr);
+});
+document.getElementById('fv-buscar').addEventListener('input', aplicarFiltros);
+
+/* ---------- selección ---------- */
+function seleccionar(id){
+  const v = idx.get(id);
+  if (!v) return;
+  tbody.querySelectorAll('tr').forEach(tr => tr.classList.toggle('is-selected', tr.dataset.id === id));
+  document.getElementById('ficha-titulo').textContent = v.obj.nombre;
+  document.getElementById('ficha-sub').textContent = v.obj.id + ' · ' + v.obj.familia;
+  document.getElementById('ficha-cuerpo').innerHTML =
+    '<div class="nz-table-wrap"><table class="nz-table"><tbody>' +
+    '<tr><th scope="row">Dimensiones</th><td>' + v.obj.dims + '</td></tr>' +
+    '<tr><th scope="row">Generador 3D</th><td><code>' + v.obj.gen + '</code></td></tr>' +
+    (v.obj.nota ? '<tr><th scope="row">Nota</th><td>' + v.obj.nota + '</td></tr>' : '') +
+    '<tr><th scope="row">Parámetros</th><td><code style="font-size:.65rem;">' + JSON.stringify(v.obj.params) + '</code></td></tr>' +
+    '</tbody></table></div>';
+  controles.target.set(v.x, 1.5, v.z);
+  camara.position.set(v.x + 14, 9, v.z + 18);
+  window.__sel = id;
+}
+
+/* raycasting en 3D */
+const ray = new THREE.Raycaster(), puntero = new THREE.Vector2();
+let downXY = null;
+renderer.domElement.addEventListener('pointerdown', e => { downXY = [e.clientX, e.clientY]; });
+renderer.domElement.addEventListener('pointerup', e => {
+  if (!downXY) return;
+  const dx = e.clientX - downXY[0], dy = e.clientY - downXY[1];
+  downXY = null;
+  if (dx*dx + dy*dy > 25) return;
+  const r = renderer.domElement.getBoundingClientRect();
+  puntero.x = ((e.clientX - r.left) / r.width) * 2 - 1;
+  puntero.y = -((e.clientY - r.top) / r.height) * 2 + 1;
+  ray.setFromCamera(puntero, camara);
+  const hits = ray.intersectObjects(escena.children, true).filter(h => h.object.userData.objId);
+  if (hits.length) seleccionar(hits[0].object.userData.objId);
+});
+
+/* resize + loop */
+function redimensionar(){
+  const w = cont.clientWidth, h = cont.clientHeight;
+  if (!w || !h) return;
+  renderer.setSize(w, h, false);
+  camara.aspect = w / h; camara.updateProjectionMatrix();
+}
+new ResizeObserver(redimensionar).observe(cont);
+redimensionar();
+(function tick(){
+  requestAnimationFrame(tick);
+  controles.update();
+  renderer.render(escena, camara);
+})();
+
+window.__fv = { BD, idx, seleccionar, renderizados, total: BD.total };
+window.__listo = true;
+</script>
+</body>
+</html>
