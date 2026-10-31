@@ -61,11 +61,11 @@ export async function generarGLB(genId, params = {}){
         if (n.isMesh){
           n.castShadow = true;
           n.receiveShadow = true;
-          /* aplicar la paleta del kit si el material no trae map */
-          if (!n.material.map){
-            n.material = n.material.clone();
-            n.material.map = tex;
-          }
+          /* aplicar la paleta del kit: el colormap usa el color del vértice como UV;
+             los GLB de Kenney traen material baseColor blanco sin map, se le pone el map */
+          n.material = n.material.clone();
+          n.material.map = tex;
+          n.material.color.set('#ffffff');
         }
       });
     }
