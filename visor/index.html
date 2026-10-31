@@ -268,10 +268,14 @@ redimensionar();
 })();
 
 window.__fv = { BD, idx, seleccionar, renderizados, total: BD.total, camara, controles,
-  /* encuadre automático por bounding box real del objeto */
-  encuadrar(id, margen = 2.8){
+  /* encuadre automático por bounding box real del objeto; aislado=true oculta el resto */
+  encuadrar(id, margen = 2.8, aislado = false){
     const v = idx.get(id);
     if (!v) return false;
+    if (aislado){
+      idx.forEach((otro, otroId) => { otro.group.visible = otroId === id; });
+      suelo.visible = true;
+    }
     const box = new THREE.Box3().setFromObject(v.group);
     const c = new THREE.Vector3(), s = new THREE.Vector3();
     box.getCenter(c); box.getSize(s);
@@ -281,7 +285,8 @@ window.__fv = { BD, idx, seleccionar, renderizados, total: BD.total, camara, con
     controles.target.copy(c);
     controles.update();
     return true;
-  } };
+  },
+  mostrarTodo(){ idx.forEach(v => { v.group.visible = true; }); } };
 window.__listo = true;
 </script>
 </body>
