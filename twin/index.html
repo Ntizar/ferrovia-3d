@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es" data-nz-theme="dark" data-nz-marca="monocromo">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ferrovia Twin · 420 m de LAV Madrid–Barcelona (Jalón) + viaducto</title>
+<meta name="description" content="Gemelo de gestión de un tramo real de alta velocidad: 200 m de trinchera y terraplén, estribo y 220 m del viaducto sobre el Jalón. Eje de OSM, terreno EU-DEM, estructura paramétrica y ficha de cada activo.">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ntizar/Aurora@v10.10.0/tokens.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Ntizar/Aurora@v10.10.0/marcas/monocromo.css">
+<style>
+:root{
+  --negro:#07080a; --panel:#0d0f12; --panel2:#12151a; --linea:#222831;
+  --tinta:#e8ecf1; --tenue:#8b94a3; --azul:#4c8dff; --ambar:#ffb020; --rojo:#ff5252; --verde:#3ddc97;
+  --mono: ui-monospace, "IBM Plex Mono", SFMono-Regular, Menlo, monospace;
+  --sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;background:var(--negro);color:var(--tinta);font-family:var(--sans);overflow:hidden}
+#app{display:grid;grid-template-columns:1fr 26rem;grid-template-rows:auto 1fr;height:100dvh}
+header{grid-column:1/-1;display:flex;align-items:center;gap:1.2rem;padding:.65rem 1rem;border-bottom:1px solid var(--linea);background:linear-gradient(180deg,#0b0d10,#07080a)}
+header h1{font-size:.95rem;margin:0;letter-spacing:.02em;font-weight:650}
+header .sub{font-family:var(--mono);font-size:.66rem;color:var(--tenue);letter-spacing:.06em;text-transform:uppercase}
+.badge{font-family:var(--mono);font-size:.6rem;border:1px solid var(--linea);border-radius:3px;padding:.15rem .4rem;color:var(--tenue);text-transform:uppercase;letter-spacing:.08em}
+.badge.b-ok{border-color:#1d4a38;color:var(--verde)}
+.badge.b-azul{border-color:#1e3a66;color:var(--azul)}
+header .der{margin-left:auto;display:flex;gap:.4rem;align-items:center}
+#escena{position:relative;min-width:0}
+canvas{display:block;width:100%;height:100%}
+/* HUD */
+.hud{position:absolute;pointer-events:none}
+.hud > *{pointer-events:auto}
+#capas{top:.7rem;left:.7rem;display:flex;flex-direction:column;gap:.28rem;background:rgba(9,11,14,.82);border:1px solid var(--linea);border-radius:6px;padding:.5rem .55rem;backdrop-filter:blur(8px)}
+.capa{display:flex;align-items:center;gap:.45rem;font-family:var(--mono);font-size:.63rem;letter-spacing:.05em;color:var(--tenue);cursor:pointer;user-select:none;text-transform:uppercase}
+.capa input{accent-color:var(--azul);width:.8rem;height:.8rem}
+.capa.on{color:var(--tinta)}
+#vistas{top:.7rem;right:.7rem;display:flex;gap:.3rem;background:rgba(9,11,14,.82);border:1px solid var(--linea);border-radius:6px;padding:.3rem;backdrop-filter:blur(8px)}
+#vistas button, .btn{font-family:var(--mono);font-size:.62rem;letter-spacing:.05em;text-transform:uppercase;background:#14181e;color:var(--tinta);border:1px solid var(--linea);border-radius:4px;padding:.35rem .5rem;cursor:pointer}
+#vistas button:hover,.btn:hover{border-color:#33404f;background:#1a1f26}
+#vistas button.act,.btn.act{border-color:var(--azul);color:#fff;background:#152238}
+#pk{left:.7rem;bottom:.7rem;font-family:var(--mono);font-size:.62rem;color:var(--tenue);background:rgba(9,11,14,.82);border:1px solid var(--linea);border-radius:6px;padding:.45rem .6rem;backdrop-filter:blur(8px);line-height:1.55}
+#pk b{color:var(--tinta);font-weight:600}
+#escala{right:.7rem;bottom:.7rem;font-family:var(--mono);font-size:.6rem;color:var(--tenue);background:rgba(9,11,14,.82);border:1px solid var(--linea);border-radius:6px;padding:.4rem .55rem}
+#escala .barra{height:3px;background:var(--tinta);margin-top:.25rem}
+#seleccion{left:50%;transform:translateX(-50%);bottom:.7rem;background:rgba(9,11,14,.92);border:1px solid #2b3a52;border-radius:6px;padding:.45rem .7rem;font-family:var(--mono);font-size:.66rem;display:none;letter-spacing:.04em}
+/* panel */
+aside{border-left:1px solid var(--linea);background:var(--panel);display:flex;flex-direction:column;min-height:0}
+.tabs{display:flex;border-bottom:1px solid var(--linea)}
+.tabs button{flex:1;padding:.6rem .3rem;font-family:var(--mono);font-size:.62rem;letter-spacing:.06em;text-transform:uppercase;background:transparent;border:0;border-bottom:2px solid transparent;color:var(--tenue);cursor:pointer}
+.tabs button.act{color:var(--tinta);border-bottom-color:var(--azul)}
+.tabpane{display:none;overflow-y:auto;padding:.9rem;flex:1;min-height:0}
+.tabpane.act{display:block}
+h2.sec{font-family:var(--mono);font-size:.6rem;letter-spacing:.12em;text-transform:uppercase;color:var(--tenue);margin:1.1rem 0 .5rem;font-weight:600}
+h2.sec:first-child{margin-top:0}
+.ficha{display:grid;grid-template-columns:auto 1fr;gap:.28rem .7rem;font-size:.78rem}
+.ficha dt{font-family:var(--mono);font-size:.62rem;color:var(--tenue);text-transform:uppercase;letter-spacing:.06em;align-self:center}
+.ficha dd{margin:0;text-align:right;font-variant-numeric:tabular-nums}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:.4rem}
+.kpi{border:1px solid var(--linea);border-radius:5px;padding:.45rem .55rem;background:var(--panel2)}
+.kpi .v{font-family:var(--mono);font-size:1.02rem;letter-spacing:-.02em}
+.kpi .l{font-family:var(--mono);font-size:.55rem;letter-spacing:.08em;text-transform:uppercase;color:var(--tenue);margin-top:.1rem}
+.kpi.ok .v{color:var(--verde)} .kpi.warn .v{color:var(--ambar)} .kpi.bad .v{color:var(--rojo)}
+.lista{border:1px solid var(--linea);border-radius:5px;overflow:hidden}
+.lista .fila{display:grid;grid-template-columns:5.2rem 1fr auto;gap:.5rem;align-items:center;padding:.4rem .5rem;border-bottom:1px solid #171b21;cursor:pointer;font-size:.74rem}
+.lista .fila:last-child{border-bottom:0}
+.lista .fila:hover{background:#141920}
+.lista .fila.sel{background:#152238}
+.lista .id{font-family:var(--mono);font-size:.58rem;color:var(--tenue);letter-spacing:.04em}
+.punto{width:.45rem;height:.45rem;border-radius:50%;display:inline-block}
+.p-ok{background:var(--verde)} .p-warn{background:var(--ambar)} .p-bad{background:var(--rojo)}
+.plan{border-left:2px solid #22303f;padding-left:.6rem;margin:.2rem 0 .7rem}
+.plan .f{font-family:var(--mono);font-size:.56rem;color:var(--tenue);letter-spacing:.06em}
+.plan .t{font-size:.76rem;margin:.12rem 0}
+.plan .d{font-size:.68rem;color:var(--tenue)}
+details{border:1px solid var(--linea);border-radius:5px;padding:.5rem .6rem;margin-bottom:.5rem;background:var(--panel2)}
+summary{cursor:pointer;font-size:.76rem;font-weight:550}
+details p{font-size:.72rem;color:#b9c1cc;line-height:1.5}
+.aviso{font-size:.68rem;color:var(--tenue);line-height:1.5;border-top:1px solid var(--linea);padding-top:.6rem;margin-top:.8rem}
+code{font-family:var(--mono);font-size:.68rem;background:#161b22;padding:.05rem .25rem;border-radius:3px}
+@media (max-width:900px){
+  #app{grid-template-columns:1fr;grid-template-rows:auto 58vh 1fr}
+  aside{border-left:0;border-top:1px solid var(--linea)}
+  #capas{transform:scale(.92);transform-origin:top left}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <header>
+    <div>
+      <h1>Ferrovia Twin · tramo de prueba</h1>
+      <div class="sub">LAV Madrid–Zaragoza–Barcelona · viaducto del Jalón · PK 0+000 en 41,315452 N / 1,774289 W</div>
+    </div>
+    <div class="der">
+      <span class="badge b-azul" id="b-vmax">300 km/h</span>
+      <span class="badge" id="b-long">420 m modelados</span>
+      <span class="badge b-ok" id="b-estado">● servicio</span>
+    </div>
+  </header>
+
+  <div id="escena">
+    <canvas id="cv"></canvas>
+
+    <div class="hud" id="capas">
+      <label class="capa on"><input type="checkbox" data-capa="via" checked> vía</label>
+      <label class="capa on"><input type="checkbox" data-capa="catenaria" checked> catenaria</label>
+      <label class="capa on"><input type="checkbox" data-capa="estructura" checked> estructura</label>
+      <label class="capa on"><input type="checkbox" data-capa="senal" checked> señalización</label>
+      <label class="capa on"><input type="checkbox" data-capa="terreno" checked> terreno</label>
+      <label class="capa on"><input type="checkbox" data-capa="tren" checked> tren</label>
+    </div>
+
+    <div class="hud" id="vistas">
+      <button data-vista="aerea" class="act">aérea</button>
+      <button data-vista="tramo">tramo</button>
+      <button data-vista="viaducto">viaducto</button>
+      <button data-vista="cabina">cabina</button>
+      <button data-vista="seccion">sección</button>
+    </div>
+
+    <div class="hud" id="pk">
+      <div>PK <b id="pk-val">0+000</b> · cota rasante <b id="pk-cota">610,50</b> m</div>
+      <div id="pk-info">estribo oeste · inicio del viaducto</div>
+    </div>
+
+    <div class="hud" id="escala"><span id="esc-txt">50 m</span><div class="barra" id="esc-barra" style="width:70px"></div></div>
+    <div class="hud" id="seleccion">—</div>
+  </div>
+
+  <aside>
+    <div class="tabs">
+      <button class="act" data-tab="activo">activo</button>
+      <button data-tab="gestion">gestión</button>
+      <button data-tab="coste">coste</button>
+      <button data-tab="datos">datos</button>
+    </div>
+
+    <div class="tabpane act" id="tab-activo">
+      <h2 class="sec">Selección</h2>
+      <div id="sel-vacio" class="aviso" style="border-top:0;padding-top:0;margin-top:0">
+        Toca cualquier elemento del modelo: un carril, un poste de catenaria, una pila del viaducto o una señal.
+        Verás su ficha, su PK y su estado de conservación.
+      </div>
+      <div id="sel-ficha" style="display:none">
+        <div style="display:flex;align-items:center;gap:.5rem;margin-bottom:.5rem">
+          <span class="punto p-ok" id="sel-punto"></span>
+          <div>
+            <div style="font-size:.9rem;font-weight:600" id="sel-nombre">—</div>
+            <div class="id" id="sel-id">—</div>
+          </div>
+        </div>
+        <dl class="ficha" id="sel-dl"></dl>
+        <h2 class="sec">Historial</h2>
+        <div class="plan" id="sel-hist"></div>
+      </div>
+      <h2 class="sec">Capas y lectura</h2>
+      <details open><summary>Qué estás viendo</summary>
+        <p><b>Eje real:</b> geometría de OpenStreetMap del viaducto y su ramal de acceso (ways 96556553 / 96556544), velocidad 300 km/h.</p>
+        <p><b>Terreno:</b> EU-DEM 25 m (OpenTopoData). La rasante es un perfil de diseño al 2 % y la estructura se genera con parámetros editables, no con datos de proyecto.</p>
+        <p><b>Vía en placa:</b> ancho 1.435 mm, carril UIC60, placa de hormigón, sujeciones cada 0,65 m.</p>
+        <p><b>Catenaria:</b> hilo de contacto a 5,30 m, péndolas cada 5 m, postes cada 50 m con zigzag de ±200 mm.</p>
+      </details>
+    </div>
+
+    <div class="tabpane" id="tab-gestion">
+      <h2 class="sec">Estado del tramo</h2>
+      <div class="kpis" id="kpis"></div>
+
+      <h2 class="sec">Inventario (muestra)</h2>
+      <div class="lista" id="inventario"></div>
+
+      <h2 class="sec">Plan de mantenimiento</h2>
+      <div id="plan"></div>
+      <div class="aviso">Los estados e inspecciones son <b>datos de ejemplo</b> para probar la interfaz de gestión. El eje, el terreno y la longitud del viaducto son datos reales.</div>
+    </div>
+
+    <div class="tabpane" id="tab-coste">
+      <h2 class="sec">Presupuesto del tramo</h2>
+      <div class="kpis" style="grid-template-columns:1fr">
+        <div class="kpi"><div class="v" id="coste-total">—</div><div class="l">coste de ejecución estimado (420 m)</div></div>
+      </div>
+      <div class="lista" id="presupuesto" style="margin-top:.55rem"></div>
+      <div style="display:flex;gap:.4rem;margin-top:.6rem">
+        <button class="btn" id="btn-csv">descargar mediciones (CSV)</button>
+        <button class="btn" id="btn-json">activos (JSON)</button>
+      </div>
+      <div class="aviso">Mediciones calculadas desde la geometría del modelo (longitudes y volúmenes reales del tramo). Precios unitarios de referencia: <b>no son un presupuesto de proyecto</b>.</div>
+
+      <h2 class="sec">Asistente del modelo</h2>
+      <div style="display:flex;gap:.35rem">
+        <input id="asis-in" class="btn" style="flex:1;text-transform:none;font-family:var(--sans);font-size:.74rem" placeholder="pregunta: cuántas pilas, presupuesto, gálibo…">
+        <button class="btn" id="asis-btn">→</button>
+      </div>
+      <div id="asis-out" class="aviso" style="border-top:0;padding-top:.45rem;margin-top:.2rem;min-height:3rem"></div>
+      <div class="chips" style="display:flex;flex-wrap:wrap;gap:.3rem">
+        <button class="btn" data-q="presupuesto">presupuesto</button>
+        <button class="btn" data-q="cuántas pilas">pilas</button>
+        <button class="btn" data-q="catenaria">catenaria</button>
+        <button class="btn" data-q="gálibo">gálibo</button>
+      </div>
+    </div>
+
+    <div class="tabpane" id="tab-datos">
+      <h2 class="sec">Trazabilidad</h2>
+      <div class="ficha" id="datos-ficha"></div>
+      <h2 class="sec">Composición del modelo</h2>
+      <div id="datos-composicion"></div>
+      <h2 class="sec">Siguiente paso (si esto gusta)</h2>
+      <div class="aviso">
+        Este visor es la capa 1 y 2 del gemelo: alineación real + estructura paramétrica + ficha de activo.
+        La capa 3 es alimentar los parámetros desde una nube LiDAR (ancho medido, altura de hilo, desplome de poste)
+        en vez de desde el proyecto: ahí el modelo deja de ser un diseño y pasa a ser un levantamiento.
+      </div>
+    </div>
+  </aside>
+</div>
+
+<script type="importmap">
+{"imports":{
+  "three":"https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js",
+  "three/addons/":"https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module" src="./twin.js"></script>
+</body>
+</html>
